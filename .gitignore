@@ -1,0 +1,26 @@
+TODO.md
+
+# Secrets — never commit real credentials
+.env
+*.env
+!.env.example
+
+# Docker volumes
+odoo-data/
+pgdata/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+api/venv/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+node_modules/
+
+# VPS secrets directory (not in repo)
+/etc/dromiss/
