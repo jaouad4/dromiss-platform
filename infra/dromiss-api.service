@@ -1,0 +1,19 @@
+[Unit]
+Description=Dromiss FastAPI Proxy
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/dromiss/api
+EnvironmentFile=/etc/dromiss/api.env
+ExecStart=/var/www/dromiss/api/venv/bin/gunicorn main:app -c gunicorn.conf.py
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
