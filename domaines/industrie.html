@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odoo Industrie & Fabrication — Dromiss by SMODU</title>
+    <meta
+      name="description"
+      content="Solution Odoo MRP complète pour industriels et fabricants. Ordres de fabrication, nomenclatures, planification de production, qualité, maintenance et coûts de revient."
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages/domaine.css" />
+  </head>
+  <body>
+    <!-- Skip link -->
+    <a href="#main" class="skip-link">Passer au contenu principal</a>
+
+    <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+    <header>
+      <nav class="navbar" id="navbar" aria-label="Navigation principale">
+        <div class="navbar__inner">
+          <div class="navbar__brand">
+            <a
+              href="../index.html"
+              class="navbar__logo"
+              aria-label="dromiss — retour accueil"
+            >
+              <img
+                src="../assets/img/dromiss-logo.png"
+                alt="dromiss"
+                height="36"
+              />
+            </a>
+            <a
+              href="https://smodu.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navbar__logo-smodu"
+              >by SMODU</a
+            >
+          </div>
+
+          <ul class="navbar__nav" role="list">
+            <li class="navbar__has-dropdown">
+              <button
+                class="navbar__nav-trigger"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Services
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul class="navbar__dropdown">
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.6-1.4 4.9-3.5 6.2V17a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1.8C5.4 13.9 4 11.6 4 9a7 7 0 0 1 8-7z"
+                        /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title"
+                        >Stratégie et Consulting</span
+                      >
+                      <span class="navbar__dd-desc"
+                        >Accompagnement stratégique &amp; transformation
+                        digitale</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <polyline
+                          points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                        /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title"
+                        >Marketing et Automation</span
+                      >
+                      <span class="navbar__dd-desc"
+                        >Campagnes automatisées &amp; génération de leads</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="6" />
+                        <circle cx="12" cy="12" r="2" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title">Inbound Marketing</span>
+                      <span class="navbar__dd-desc"
+                        >Attirer, convertir et fidéliser vos clients</span
+                      >
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__has-dropdown">
+              <button
+                class="navbar__nav-trigger"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Solutions
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul class="navbar__dropdown">
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title">Intégration CRM</span>
+                      <span class="navbar__dd-desc"
+                        >HubSpot, Salesforce &amp; Microsoft Dynamics</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title">Intégration ERP</span>
+                      <span class="navbar__dd-desc"
+                        >Odoo, SAP &amp; ERP personnalisés avec IA</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <line x1="18" y1="20" x2="18" y2="10" />
+                        <line x1="12" y1="20" x2="12" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                        <line x1="2" y1="20" x2="22" y2="20" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title"
+                        >Business Intelligence</span
+                      >
+                      <span class="navbar__dd-desc"
+                        >Power BI, Tableau &amp; tableaux de bord
+                        prédictifs</span
+                      >
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__has-dropdown">
+              <button
+                class="navbar__nav-trigger"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Secteurs
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul class="navbar__dropdown navbar__dropdown--sectors">
+                <li>
+                  <a href="./sante.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title"
+                        >Santé &amp; Pharmacie</span
+                      ></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./hotellerie.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                        />
+                        <polyline points="9 22 9 12 15 12 15 22" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Hôtellerie</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./immobilier.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Immobilier</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./distribution.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <rect x="1" y="3" width="15" height="13" />
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                        <circle cx="5.5" cy="18.5" r="2.5" />
+                        <circle cx="18.5" cy="18.5" r="2.5" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Distribution</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./industrie.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M12 2v2M12 20v2M2 12h2M20 12h2" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Industrie</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./services.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path
+                          d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"
+                        /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Services</span></span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../index.html#apropos">À propos</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+
+          <div class="navbar__actions">
+            <a href="../contact.html?secteur=industrie" class="btn-demo"
+              >Demander une démo</a
+            >
+            <button
+              class="theme-toggle"
+              data-theme-toggle
+              aria-label="Activer le mode sombre"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+            <button
+              class="hamburger"
+              id="hamburger-btn"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <nav
+        class="mobile-nav"
+        id="mobile-menu"
+        aria-label="Navigation mobile"
+        aria-hidden="true"
+      >
+        <span class="mobile-nav-heading">Services</span>
+        <a href="#" class="mobile-nav-link mobile-nav-sub"
+          >Stratégie et Consulting</a
+        >
+        <a href="#" class="mobile-nav-link mobile-nav-sub"
+          >Marketing et Automation</a
+        >
+        <a href="#" class="mobile-nav-link mobile-nav-sub">Inbound Marketing</a>
+        <span class="mobile-nav-heading">Solutions</span>
+        <a href="#" class="mobile-nav-link mobile-nav-sub">Intégration CRM</a>
+        <a href="#" class="mobile-nav-link mobile-nav-sub">Intégration ERP</a>
+        <a href="#" class="mobile-nav-link mobile-nav-sub"
+          >Business Intelligence</a
+        >
+        <span class="mobile-nav-heading">Secteurs</span>
+        <a href="./sante.html" class="mobile-nav-link mobile-nav-sub"
+          >Santé &amp; Pharmacie</a
+        >
+        <a href="./hotellerie.html" class="mobile-nav-link mobile-nav-sub"
+          >Hôtellerie</a
+        >
+        <a href="./immobilier.html" class="mobile-nav-link mobile-nav-sub"
+          >Immobilier</a
+        >
+        <a href="./distribution.html" class="mobile-nav-link mobile-nav-sub"
+          >Distribution</a
+        >
+        <a href="./industrie.html" class="mobile-nav-link mobile-nav-sub"
+          >Industrie</a
+        >
+        <a href="./services.html" class="mobile-nav-link mobile-nav-sub"
+          >Services</a
+        >
+        <a href="../index.html#apropos" class="mobile-nav-link">À propos</a>
+        <a href="../contact.html" class="mobile-nav-link">Contact</a>
+        <a href="../contact.html?secteur=industrie" class="btn-demo-mobile"
+          >Demander une démo</a
+        >
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============================================================
+         HERO INDUSTRIE
+    ============================================================ -->
+      <section class="domain-hero" aria-labelledby="domain-hero-title">
+        <div class="container">
+          <div class="domain-hero__grid">
+            <!-- Contenu gauche -->
+            <div>
+              <ol
+                class="domain-hero__breadcrumb animate-on-scroll"
+                aria-label="Fil d'Ariane"
+              >
+                <li><a href="../index.html">Accueil</a></li>
+                <li aria-hidden="true" class="domain-hero__breadcrumb-sep">
+                  ›
+                </li>
+                <li><a href="../index.html#secteurs">Secteurs</a></li>
+                <li aria-hidden="true" class="domain-hero__breadcrumb-sep">
+                  ›
+                </li>
+                <li aria-current="page">Industrie &amp; Fabrication</li>
+              </ol>
+
+              <div
+                class="domain-hero__label animate-on-scroll animate-delay-1"
+                aria-hidden="true"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  />
+                </svg>
+                Industrie &amp; Fabrication
+              </div>
+
+              <h1
+                class="domain-hero__title animate-on-scroll animate-delay-2"
+                id="domain-hero-title"
+              >
+                Odoo pour<br /><span>l'Industrie &amp; la Fabrication</span>
+              </h1>
+
+              <p class="domain-hero__desc animate-on-scroll animate-delay-3">
+                Pilotez votre usine de bout en bout avec le module MRP d'Odoo :
+                nomenclatures multi-niveaux, ordres de fabrication,
+                planification de capacité, contrôle qualité, maintenance
+                préventive et coûts de revient analytiques — en temps réel
+                depuis l'atelier.
+              </p>
+
+              <div class="domain-hero__ctas animate-on-scroll animate-delay-4">
+                <a href="../contact.html?secteur=industrie" class="btn-primary">
+                  Demander une démo gratuite
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#modules" class="btn-secondary">Voir les modules</a>
+              </div>
+
+              <div
+                class="domain-hero__highlights animate-on-scroll animate-delay-4"
+                aria-label="Points forts"
+              >
+                <div class="domain-hero__highlight">
+                  <span class="domain-hero__highlight-check" aria-hidden="true">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  MRP I &amp; II — planification des besoins en matières
+                </div>
+                <div class="domain-hero__highlight">
+                  <span class="domain-hero__highlight-check" aria-hidden="true">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  Feuilles de travail numériques sur tablette en atelier
+                </div>
+                <div class="domain-hero__highlight">
+                  <span class="domain-hero__highlight-check" aria-hidden="true">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  Contrôle qualité intégré avec points de contrôle
+                </div>
+                <div class="domain-hero__highlight">
+                  <span class="domain-hero__highlight-check" aria-hidden="true">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  Calcul automatique du coût de revient par ordre de fabrication
+                </div>
+              </div>
+            </div>
+
+            <!-- Visuel droit -->
+            <div class="domain-hero__visual animate-on-scroll animate-delay-2">
+              <div class="domain-hero__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&h=525&fit=crop&q=80"
+                  alt="Ingénieur sur tablette dans un atelier de fabrication industrielle moderne"
+                  width="700"
+                  height="525"
+                  loading="eager"
+                />
+                <div class="domain-hero__img-bar" aria-hidden="true"></div>
+              </div>
+              <div
+                class="domain-hero__stat-float"
+                aria-label="35+ unités de production équipées"
+              >
+                <span class="domain-hero__stat-value">35+</span>
+                <span class="domain-hero__stat-label"
+                  >Unités de production équipées</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         STATS SECTEUR
+    ============================================================ -->
+      <section aria-label="Chiffres clés du secteur industrie">
+        <div class="container">
+          <div class="domain-stats-band animate-on-scroll">
+            <div class="domain-stat">
+              <div class="domain-stat__value">-35%</div>
+              <div class="domain-stat__label">
+                Réduction des temps d'arrêt machine grâce à la maintenance
+                préventive
+              </div>
+            </div>
+            <div class="domain-stat">
+              <div class="domain-stat__value">+28%</div>
+              <div class="domain-stat__label">
+                Amélioration du taux de rendement synthétique (TRS)
+              </div>
+            </div>
+            <div class="domain-stat">
+              <div class="domain-stat__value">100%</div>
+              <div class="domain-stat__label">
+                Traçabilité des matières premières aux produits finis
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         MODULES ODOO
+    ============================================================ -->
+      <section id="modules" aria-labelledby="modules-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Ce qui est inclus</span>
+            <h2 class="section-title" id="modules-title">
+              Modules Odoo pour l'Industrie
+            </h2>
+            <p class="section-subtitle">
+              Un ERP manufacturier complet qui connecte le bureau des méthodes,
+              l'atelier de production, le service qualité et la comptabilité
+              analytique.
+            </p>
+          </div>
+
+          <div class="modules-grid">
+            <!-- MRP & Ordres de fabrication -->
+            <article class="module-card animate-on-scroll">
+              <div class="module-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"
+                  />
+                  <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
+                </svg>
+              </div>
+              <h3 class="module-card__title">MRP — Ordres de Fabrication</h3>
+              <p class="module-card__desc">
+                Planification des besoins en matières (MRP I &amp; II) avec
+                nomenclatures multi-niveaux et gammes opératoires. Génération
+                automatique des ordres de fabrication et des ordres d'achat.
+                Suivi de l'avancement en temps réel depuis les feuilles de
+                travail numériques sur tablette en atelier.
+              </p>
+              <div class="module-card__tags">
+                <span class="module-tag">MRP I &amp; II</span>
+                <span class="module-tag">Nomenclatures</span>
+                <span class="module-tag">Gammes</span>
+              </div>
+            </article>
+
+            <!-- Planification de capacité -->
+            <article class="module-card animate-on-scroll animate-delay-1">
+              <div class="module-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                  <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
+                </svg>
+              </div>
+              <h3 class="module-card__title">Planification &amp; Capacité</h3>
+              <p class="module-card__desc">
+                Planification visuelle de la production sur Gantt interactif.
+                Gestion des postes de charge et des centres de travail avec
+                calcul de capacité disponible vs. charge planifiée. Détection
+                automatique des surcharges et proposition de lissage de charge.
+              </p>
+              <div class="module-card__tags">
+                <span class="module-tag">Gantt</span>
+                <span class="module-tag">Postes de charge</span>
+                <span class="module-tag">Lissage</span>
+              </div>
+            </article>
+
+            <!-- Contrôle Qualité -->
+            <article class="module-card animate-on-scroll animate-delay-2">
+              <div class="module-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="9 11 12 14 22 4" />
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  />
+                </svg>
+              </div>
+              <h3 class="module-card__title">Contrôle Qualité</h3>
+              <p class="module-card__desc">
+                Points de contrôle qualité configurables à chaque étape de
+                production : réception matières, en-cours de fabrication et
+                produit fini. Check-lists numériques, mesures paramétriques,
+                gestion des non-conformités, rapports 8D et traçabilité complète
+                des contrôles par lot de fabrication.
+              </p>
+              <div class="module-card__tags">
+                <span class="module-tag">Points de contrôle</span>
+                <span class="module-tag">Non-conformités</span>
+                <span class="module-tag">Rapports 8D</span>
+              </div>
+            </article>
+
+            <!-- Maintenance -->
+            <article class="module-card animate-on-scroll animate-delay-3">
+              <div class="module-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  />
+                </svg>
+              </div>
+              <h3 class="module-card__title">
+                Maintenance Préventive &amp; Curative
+              </h3>
+              <p class="module-card__desc">
+                Gestion du parc machines avec plans de maintenance préventive
+                basés sur le temps ou le compteur d'utilisation. Demandes
+                d'intervention depuis l'atelier, planification des techniciens,
+                historique complet des interventions, suivi des pièces de
+                rechange et calcul du TRS (Taux de Rendement Synthétique).
+              </p>
+              <div class="module-card__tags">
+                <span class="module-tag">Préventive</span>
+                <span class="module-tag">TRS</span>
+                <span class="module-tag">Pièces de rechange</span>
+              </div>
+            </article>
+
+            <!-- Coûts de revient -->
+            <article class="module-card animate-on-scroll">
+              <div class="module-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <h3 class="module-card__title">Coûts de Revient</h3>
+              <p class="module-card__desc">
+                Calcul automatique du coût de revient réel par ordre de
+                fabrication : matières consommées, main-d'œuvre (temps pointés),
+                frais généraux et sous-traitance. Comparaison coût standard vs.
+                coût réel, analyse des écarts et comptabilisation analytique par
+                produit et par ligne.
+              </p>
+              <div class="module-card__tags">
+                <span class="module-tag">Coût réel</span>
+                <span class="module-tag">Écarts</span>
+                <span class="module-tag">Analytique</span>
+              </div>
+            </article>
+
+            <!-- Atelier connecté (MES) -->
+            <article class="module-card animate-on-scroll animate-delay-1">
+              <div class="module-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                  <path d="M9 7h6M9 11h4" />
+                </svg>
+              </div>
+              <h3 class="module-card__title">Atelier Connecté (MES)</h3>
+              <p class="module-card__desc">
+                Interface opérateur simplifiée sur tablette ou écran tactile en
+                atelier : lecture des ordres de fabrication, pointage des temps
+                par opération, déclaration des quantités produites et des
+                rebuts, signalement des anomalies et consultation des gammes et
+                plans directement depuis le poste de travail.
+              </p>
+              <div class="module-card__tags">
+                <span class="module-tag">Tablette atelier</span>
+                <span class="module-tag">Pointage temps</span>
+                <span class="module-tag">Rebuts</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         NOTRE APPROCHE
+    ============================================================ -->
+      <section aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Méthodologie</span>
+            <h2 class="section-title" id="process-title">
+              Notre approche pour l'Industrie
+            </h2>
+            <p class="section-subtitle">
+              Un déploiement MRP structuré qui respecte vos gammes et
+              nomenclatures existantes sans interruption de production.
+            </p>
+          </div>
+
+          <div class="process-steps">
+            <div class="process-step animate-on-scroll">
+              <div class="process-step__number" aria-hidden="true">1</div>
+              <h3 class="process-step__title">Audit production</h3>
+              <p class="process-step__desc">
+                Relevé des nomenclatures, gammes, postes de charge, machines et
+                flux de production existants.
+              </p>
+            </div>
+
+            <div class="process-step animate-on-scroll animate-delay-1">
+              <div class="process-step__number" aria-hidden="true">2</div>
+              <h3 class="process-step__title">Paramétrage MRP</h3>
+              <p class="process-step__desc">
+                Import des nomenclatures et gammes, configuration des centres de
+                charge et des règles de planification.
+              </p>
+            </div>
+
+            <div class="process-step animate-on-scroll animate-delay-2">
+              <div class="process-step__number" aria-hidden="true">3</div>
+              <h3 class="process-step__title">Pilote sur une ligne</h3>
+              <p class="process-step__desc">
+                Test grandeur nature sur une ligne de production pilote,
+                formation des opérateurs et des chefs d'atelier.
+              </p>
+            </div>
+
+            <div class="process-step animate-on-scroll animate-delay-3">
+              <div class="process-step__number" aria-hidden="true">4</div>
+              <h3 class="process-step__title">Déploiement usine</h3>
+              <p class="process-step__desc">
+                Extension à toute l'usine avec accompagnement terrain et support
+                dédié pendant 60 jours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         NAVIGATION AUTRES SECTEURS
+    ============================================================ -->
+      <section aria-labelledby="other-sectors-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Autres secteurs</span>
+            <h2 class="section-title" id="other-sectors-title">
+              Découvrez nos autres solutions
+            </h2>
+          </div>
+          <nav
+            class="sectors-nav animate-on-scroll"
+            aria-label="Navigation vers les autres secteurs"
+          >
+            <a href="./sante.html" class="sector-nav-link">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+                />
+              </svg>
+              Santé &amp; Pharmacie
+            </a>
+            <a href="./hotellerie.html" class="sector-nav-link">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+              </svg>
+              Hôtellerie
+            </a>
+            <a href="./immobilier.html" class="sector-nav-link">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+              Immobilier
+            </a>
+            <a href="./distribution.html" class="sector-nav-link">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+              Distribution
+            </a>
+            <a
+              href="./industrie.html"
+              class="sector-nav-link"
+              aria-current="page"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                />
+              </svg>
+              Industrie
+            </a>
+            <a href="./services.html" class="sector-nav-link">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Services
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         CTA FINAL
+    ============================================================ -->
+      <section aria-labelledby="domain-cta-title">
+        <div class="container">
+          <div class="domain-cta animate-on-scroll">
+            <div class="domain-cta__label" aria-hidden="true">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                aria-hidden="true"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Consultation gratuite
+            </div>
+            <h2 class="domain-cta__title" id="domain-cta-title">
+              Prêt à connecter votre atelier à votre ERP&nbsp;?
+            </h2>
+            <p class="domain-cta__desc">
+              Demandez une démonstration gratuite de la solution dromiss
+              Industrie. Notre équipe vous montrera comment Odoo MRP peut
+              piloter votre production, réduire vos rebuts et calculer vos coûts
+              de revient réels — en moins de 12 semaines.
+            </p>
+            <div class="domain-cta__actions">
+              <a
+                href="../contact.html?secteur=industrie"
+                class="btn-cta-primary"
+              >
+                Demander une démo gratuite
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="tel:+212500000000" class="btn-cta-ghost">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                Nous appeler
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+
+        <div class="footer__body">
+
+          <!-- Column 1: brand -->
+          <div class="footer__brand">
+            <div class="footer__logo-wrap">
+              <img src="../assets/img/dromiss-logo.png" alt="dromiss" class="footer__logo-img">
+              <div class="footer__logo-text">
+                <span class="footer__logo-name">dromiss</span>
+                <a href="https://smodu.com/" target="_blank" rel="noopener noreferrer" class="footer__logo-smodu">by SMODU</a>
+              </div>
+            </div>
+            <p class="footer__tagline">Solutions Odoo sur mesure pour les entreprises marocaines. De l'audit à la formation, nous sommes à vos côtés.</p>
+          </div>
+
+          <!-- Column 2: contact -->
+          <div class="footer__info">
+            <p class="footer__city">Tanger, Maroc</p>
+            <div class="footer__contacts">
+              <a href="tel:+212500000000" class="footer__contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+                +212 656-196520
+              </a>
+              <a href="mailto:contact@dromiss.ma" class="footer__contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                contact@dromiss.ma
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 3: map -->
+          <div class="footer__map-col">
+            <a href="https://maps.app.goo.gl/Z7BEfBsftG9WY2qh8" target="_blank" rel="noopener noreferrer" class="footer__map-card" aria-label="Voir sur Google Maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.2!2d-5.8177!3d35.7673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b875cf764b759%3A0x178b2b4f21c95c!2sTanger%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1700000000000"
+                title="Tanger sur Google Maps"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                tabindex="-1"
+                aria-hidden="true">
+              </iframe>
+              <div class="footer__map-badge">
+                <span class="footer__map-pill">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Voir sur Google Maps
+                </span>
+                <span class="footer__map-arrow" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 Dromiss by SMODU. Tous droits r&eacute;serv&eacute;s.</p>
+          <p class="footer__copy">Fait avec soin au Maroc &#x1F1F2;&#x1F1E6;</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <script type="module" src="../assets/js/ui.js"></script>
+  </body>
+</html>

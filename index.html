@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dromiss logistics</title>
+    <meta
+      name="description"
+      content="Dromiss by SMODU accompagne les entreprises dans leur transformation digitale grâce à des solutions ERP et CRM Odoo adaptées à leur secteur d'activité."
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/tokens.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+    <link rel="stylesheet" href="./assets/css/pages/home.css" />
+  </head>
+  <body>
+    <!-- Skip link -->
+    <a href="#main" class="skip-link">Passer au contenu principal</a>
+
+    <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+    <header>
+      <nav class="navbar" id="navbar" aria-label="Navigation principale">
+        <div class="navbar__inner">
+          <div class="navbar__brand">
+            <a
+              href="./index.html"
+              class="navbar__logo"
+              aria-label="dromiss — accueil"
+            >
+              <img
+                src="./assets/img/dromiss-logo.png"
+                alt="dromiss"
+                height="36"
+              />
+            </a>
+            <a
+              href="https://smodu.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navbar__logo-smodu"
+              >by SMODU</a
+            >
+          </div>
+
+          <ul class="navbar__nav" role="list">
+            <li class="navbar__has-dropdown">
+              <button
+                class="navbar__nav-trigger"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Services
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul class="navbar__dropdown">
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.6-1.4 4.9-3.5 6.2V17a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1.8C5.4 13.9 4 11.6 4 9a7 7 0 0 1 8-7z"
+                        /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title"
+                        >Stratégie et Consulting</span
+                      >
+                      <span class="navbar__dd-desc"
+                        >Accompagnement stratégique &amp; transformation
+                        digitale</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <polyline
+                          points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                        /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title"
+                        >Marketing et Automation</span
+                      >
+                      <span class="navbar__dd-desc"
+                        >Campagnes automatisées &amp; génération de leads</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="6" />
+                        <circle cx="12" cy="12" r="2" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title">Inbound Marketing</span>
+                      <span class="navbar__dd-desc"
+                        >Attirer, convertir et fidéliser vos clients</span
+                      >
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__has-dropdown">
+              <button
+                class="navbar__nav-trigger"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Solutions
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul class="navbar__dropdown">
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title">Intégration CRM</span>
+                      <span class="navbar__dd-desc"
+                        >HubSpot, Salesforce &amp; Microsoft Dynamics</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title">Intégration ERP</span>
+                      <span class="navbar__dd-desc"
+                        >Odoo, SAP &amp; ERP personnalisés avec IA</span
+                      >
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <line x1="18" y1="20" x2="18" y2="10" />
+                        <line x1="12" y1="20" x2="12" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                        <line x1="2" y1="20" x2="22" y2="20" /></svg
+                    ></span>
+                    <span class="navbar__dd-text">
+                      <span class="navbar__dd-title"
+                        >Business Intelligence</span
+                      >
+                      <span class="navbar__dd-desc"
+                        >Power BI, Tableau &amp; tableaux de bord
+                        prédictifs</span
+                      >
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__has-dropdown">
+              <button
+                class="navbar__nav-trigger"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Secteurs
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul class="navbar__dropdown navbar__dropdown--sectors">
+                <li>
+                  <a href="./domaines/sante.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title"
+                        >Santé &amp; Pharmacie</span
+                      ></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./domaines/hotellerie.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                        />
+                        <polyline points="9 22 9 12 15 12 15 22" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Hôtellerie</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./domaines/immobilier.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Immobilier</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./domaines/distribution.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <rect x="1" y="3" width="15" height="13" />
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                        <circle cx="5.5" cy="18.5" r="2.5" />
+                        <circle cx="18.5" cy="18.5" r="2.5" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Distribution</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./domaines/industrie.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                          d="M19.07 4.93a10 10 0 0 0-14.14 0M4.93 19.07a10 10 0 0 0 14.14 0"
+                        />
+                        <path d="M12 2v2M12 20v2M2 12h2M20 12h2" /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Industrie</span></span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="./domaines/services.html">
+                    <span class="navbar__dd-icon"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path
+                          d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"
+                        /></svg
+                    ></span>
+                    <span class="navbar__dd-text"
+                      ><span class="navbar__dd-title">Services</span></span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+
+          <div class="navbar__actions">
+            <a href="./contact.html" class="btn-demo">Demander une démo</a>
+            <button
+              class="theme-toggle"
+              data-theme-toggle
+              aria-label="Activer le mode sombre"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+            <button
+              class="hamburger"
+              id="hamburger-btn"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <nav
+        class="mobile-nav"
+        id="mobile-menu"
+        aria-label="Navigation mobile"
+        aria-hidden="true"
+      >
+        <span class="mobile-nav-heading">Services</span>
+        <a href="#" class="mobile-nav-link mobile-nav-sub"
+          >Stratégie et Consulting</a
+        >
+        <a href="#" class="mobile-nav-link mobile-nav-sub"
+          >Marketing et Automation</a
+        >
+        <a href="#" class="mobile-nav-link mobile-nav-sub">Inbound Marketing</a>
+        <span class="mobile-nav-heading">Solutions</span>
+        <a href="#" class="mobile-nav-link mobile-nav-sub">Intégration CRM</a>
+        <a href="#" class="mobile-nav-link mobile-nav-sub">Intégration ERP</a>
+        <a href="#" class="mobile-nav-link mobile-nav-sub"
+          >Business Intelligence</a
+        >
+        <span class="mobile-nav-heading">Secteurs</span>
+        <a href="./domaines/sante.html" class="mobile-nav-link mobile-nav-sub"
+          >Santé &amp; Pharmacie</a
+        >
+        <a
+          href="./domaines/hotellerie.html"
+          class="mobile-nav-link mobile-nav-sub"
+          >Hôtellerie &amp; Restauration</a
+        >
+        <a
+          href="./domaines/immobilier.html"
+          class="mobile-nav-link mobile-nav-sub"
+          >Immobilier</a
+        >
+        <a
+          href="./domaines/distribution.html"
+          class="mobile-nav-link mobile-nav-sub"
+          >Distribution</a
+        >
+        <a
+          href="./domaines/industrie.html"
+          class="mobile-nav-link mobile-nav-sub"
+          >Industrie</a
+        >
+        <a
+          href="./domaines/services.html"
+          class="mobile-nav-link mobile-nav-sub"
+          >Services</a
+        >
+        <a href="#apropos" class="mobile-nav-link">À propos</a>
+        <a href="./contact.html" class="mobile-nav-link">Contact</a>
+        <a href="./contact.html" class="btn-demo-mobile">Demander une démo</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============================================================
+         HERO
+    ============================================================ -->
+      <section id="accueil" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__grid">
+            <!-- Contenu gauche -->
+            <div class="hero__content">
+              <div class="hero__label animate-on-scroll" aria-hidden="true">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Partenaire Odoo certifié
+              </div>
+
+              <h1
+                class="hero__title animate-on-scroll animate-delay-1"
+                id="hero-title"
+              >
+                Transformez votre<br />entreprise avec<br /><span
+                  >Odoo sur mesure</span
+                >
+              </h1>
+
+              <p class="hero__subtitle animate-on-scroll animate-delay-2">
+                Dromiss by SMODU accompagne les entreprises dans leur
+                transformation digitale grâce à des solutions ERP et CRM Odoo
+                adaptées à leur secteur d'activité.
+              </p>
+
+              <div class="hero__ctas animate-on-scroll animate-delay-3">
+                <a href="#solutions" class="btn-primary">
+                  Découvrir nos solutions
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="./contact.html" class="btn-secondary"
+                  >Nous contacter</a
+                >
+              </div>
+
+              <div
+                class="hero__stats animate-on-scroll animate-delay-4"
+                aria-label="Chiffres clés"
+              >
+                <div class="hero__stat">
+                  <span class="hero__stat-dot" aria-hidden="true"></span>
+                  50+ entreprises accompagnées
+                </div>
+                <div class="hero__stat">
+                  <span class="hero__stat-dot" aria-hidden="true"></span>
+                  Solutions certifiées Odoo
+                </div>
+                <div class="hero__stat">
+                  <span class="hero__stat-dot" aria-hidden="true"></span>
+                  Support 7j/7
+                </div>
+              </div>
+            </div>
+
+            <!-- Visuel droit -->
+            <div class="hero__visual animate-on-scroll animate-delay-2">
+              <div class="hero__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=525&fit=crop&q=80"
+                  alt="Tableau de bord ERP Odoo affichant des métriques de ventes, CRM et analytiques en temps réel"
+                  width="700"
+                  height="525"
+                  loading="eager"
+                />
+              </div>
+
+              <div class="hero-badge hero-badge--1" aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  class="hero-badge__icon"
+                  aria-hidden="true"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                50+ entreprises
+              </div>
+
+              <div class="hero-badge hero-badge--2" aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  class="hero-badge__icon"
+                  aria-hidden="true"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Certifié Odoo
+              </div>
+
+              <div class="hero-badge hero-badge--3" aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  class="hero-badge__icon"
+                  aria-hidden="true"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Support 7j/7
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         AI SECTION
+    ============================================================ -->
+      <section class="ai-section" aria-labelledby="ai-title">
+        <div class="container">
+
+          <!-- Header -->
+          <div class="ai-header animate-on-scroll">
+            <div class="ai-header__eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Intelligence Artificielle
+            </div>
+            <h2 class="ai-header__title" id="ai-title">
+              Votre concurrent adopte l'IA.<br>
+              <span>Et vous&nbsp;?</span>
+            </h2>
+            <p class="ai-header__sub">
+              Le marché IA au Maroc croît de <strong>175%/an</strong>. Pourtant 80% des PME restent bloquées par les mêmes obstacles.
+            </p>
+          </div>
+
+          <!-- Pain points + stats side by side -->
+          <div class="ai-body">
+
+            <!-- Left: pain points -->
+            <div class="ai-pains">
+              <div class="ai-pain animate-on-scroll">
+                <div class="ai-pain__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h3 class="ai-pain__title">Processus manuels chronophages</h3>
+                  <p class="ai-pain__desc">Facturation, reporting, suivi client — des tâches répétitives absorbent <strong>60% du temps</strong> de vos équipes.</p>
+                </div>
+              </div>
+              <div class="ai-pain animate-on-scroll animate-delay-1">
+                <div class="ai-pain__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <div>
+                  <h3 class="ai-pain__title">Silos de données inexploités</h3>
+                  <p class="ai-pain__desc">Excel, ERP déconnectés, emails — vos données existent mais restent <strong>inutilisables pour décider vite</strong>.</p>
+                </div>
+              </div>
+              <div class="ai-pain animate-on-scroll animate-delay-2">
+                <div class="ai-pain__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                  <h3 class="ai-pain__title">Manque d'expertise IA interne</h3>
+                  <p class="ai-pain__desc"><strong>3% seulement</strong> des PME ont les compétences pour implémenter l'IA sans aide extérieure.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: big stat + mini stats -->
+            <div class="ai-stats animate-on-scroll">
+              <div class="ai-stat-hero">
+                <div class="ai-stat-hero__number" data-count="95" data-suffix="%">0%</div>
+                <p class="ai-stat-hero__text">des PME font face au <strong>paradoxe de l'IA</strong>&nbsp;: elles savent qu'elles en ont besoin, mais ne savent pas par où commencer.</p>
+              </div>
+              <div class="ai-stat-grid">
+                <div class="ai-stat-card">
+                  <div class="ai-stat-card__label">Croissance marché IA Maroc</div>
+                  <div class="ai-stat-card__value" data-count="175" data-suffix="%">0%</div>
+                  <div class="ai-stat-card__bar"><div class="ai-stat-card__fill" style="--w:100%"></div></div>
+                </div>
+                <div class="ai-stat-card">
+                  <div class="ai-stat-card__label">PME utilisant l'IA aujourd'hui</div>
+                  <div class="ai-stat-card__value" data-count="20" data-suffix="%">0%</div>
+                  <div class="ai-stat-card__bar"><div class="ai-stat-card__fill" style="--w:20%"></div></div>
+                </div>
+                <div class="ai-stat-card">
+                  <div class="ai-stat-card__label">PME prêtes à adopter</div>
+                  <div class="ai-stat-card__value" data-count="68" data-suffix="%">0%</div>
+                  <div class="ai-stat-card__bar"><div class="ai-stat-card__fill" style="--w:68%"></div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SOLUTIONS
+    ============================================================ -->
+      <section id="solutions" aria-labelledby="solutions-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Nos expertises</span>
+            <h2 class="section-title" id="solutions-title">
+              Nos Solutions Odoo
+            </h2>
+            <p class="section-subtitle">
+              Des modules adaptés à chaque secteur pour optimiser vos opérations
+              et accélérer votre croissance.
+            </p>
+          </div>
+
+          <div class="solutions-grid">
+            <!-- Santé & Pharmacie -->
+            <article class="solution-card animate-on-scroll">
+              <div class="solution-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+                  />
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Odoo Santé & Pharmacie</h3>
+              <p class="solution-card__desc">
+                Gestion des stocks médicaments, ordonnances, POS pharmacie,
+                traçabilité et conformité réglementaire. Une solution complète
+                conforme aux exigences du secteur pharmaceutique.
+              </p>
+              <a
+                href="./domaines/sante.html"
+                class="solution-card__link"
+                aria-label="En savoir plus sur Odoo Santé et Pharmacie"
+              >
+                En savoir plus
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </article>
+
+            <!-- Hôtellerie -->
+            <article class="solution-card animate-on-scroll animate-delay-1">
+              <div class="solution-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                  <line x1="12" y1="12" x2="12" y2="16" />
+                  <line x1="10" y1="14" x2="14" y2="14" />
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Odoo Hôtellerie</h3>
+              <p class="solution-card__desc">
+                Property Management System (PMS), réservations, facturation,
+                housekeeping et reporting en temps réel. Optimisez l'expérience
+                client et la gestion opérationnelle de votre établissement.
+              </p>
+              <a
+                href="./domaines/hotellerie.html"
+                class="solution-card__link"
+                aria-label="En savoir plus sur Odoo Hôtellerie"
+              >
+                En savoir plus
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </article>
+
+            <!-- Distribution -->
+            <article class="solution-card animate-on-scroll animate-delay-2">
+              <div class="solution-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="8" cy="21" r="1" />
+                  <circle cx="19" cy="21" r="1" />
+                  <path
+                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                  />
+                </svg>
+              </div>
+              <h3 class="solution-card__title">Commerce &amp; Distribution</h3>
+              <p class="solution-card__desc">
+                Gestion des ventes, achats, inventaire multisite, et point de
+                vente omnicanal. Synchronisez vos opérations de distribution
+                avec une visibilité en temps réel sur vos stocks et vos flux.
+              </p>
+              <a
+                href="./domaines/distribution.html"
+                class="solution-card__link"
+                aria-label="En savoir plus sur Odoo Commerce et Distribution"
+              >
+                En savoir plus
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </article>
+
+            <!-- CRM & Marketing -->
+            <article class="solution-card animate-on-scroll animate-delay-3">
+              <div class="solution-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+              </div>
+              <h3 class="solution-card__title">CRM &amp; Marketing</h3>
+              <p class="solution-card__desc">
+                Suivi des leads, automatisation marketing, pipeline commercial
+                et tableaux de bord analytiques. Transformez vos prospects en
+                clients fidèles grâce à une vision 360° de votre activité
+                commerciale.
+              </p>
+              <a
+                href="./domaines/services.html"
+                class="solution-card__link"
+                aria-label="En savoir plus sur Odoo CRM et Marketing"
+              >
+                En savoir plus
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </article>
+          </div>
+
+          <!-- Why Odoo banner -->
+          <div class="why-odoo-wrap animate-on-scroll">
+            <div class="why-odoo" aria-label="Odoo en chiffres">
+              <div>
+                <div class="why-odoo__stat-value" data-count="12000" data-format="space">0</div>
+                <div class="why-odoo__stat-label">Applications disponibles</div>
+              </div>
+              <div class="why-odoo__divider" aria-hidden="true"></div>
+              <div>
+                <div class="why-odoo__stat-value" data-count="7" data-suffix="&nbsp;M">0</div>
+                <div class="why-odoo__stat-label">
+                  Utilisateurs dans le monde
+                </div>
+              </div>
+              <div class="why-odoo__divider" aria-hidden="true"></div>
+              <div>
+                <div class="why-odoo__stat-value" data-count="100" data-suffix="%">0</div>
+                <div class="why-odoo__stat-label">
+                  Open source &amp; modulaire
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SECTEURS
+    ============================================================ -->
+      <section id="secteurs" aria-labelledby="secteurs-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Nos domaines</span>
+            <h2 class="section-title" id="secteurs-title">
+              Secteurs que nous servons
+            </h2>
+            <p class="section-subtitle">
+              Des solutions Odoo spécialisées pour répondre aux enjeux
+              spécifiques de chaque industrie.
+            </p>
+          </div>
+
+          <div class="sectors-row" role="list">
+            <a
+              href="./domaines/sante.html"
+              class="sector-card animate-on-scroll"
+              role="listitem"
+            >
+              <div class="sector-card__icon" aria-hidden="true">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+                  />
+                </svg>
+              </div>
+              <span class="sector-card__name">Santé &amp; Pharmacie</span>
+            </a>
+
+            <a
+              href="./domaines/hotellerie.html"
+              class="sector-card animate-on-scroll animate-delay-1"
+              role="listitem"
+            >
+              <div class="sector-card__icon" aria-hidden="true">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                </svg>
+              </div>
+              <span class="sector-card__name">Hôtellerie</span>
+            </a>
+
+            <a
+              href="./domaines/immobilier.html"
+              class="sector-card animate-on-scroll animate-delay-2"
+              role="listitem"
+            >
+              <div class="sector-card__icon" aria-hidden="true">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <span class="sector-card__name">Immobilier</span>
+            </a>
+
+            <a
+              href="./domaines/distribution.html"
+              class="sector-card animate-on-scroll animate-delay-3"
+              role="listitem"
+            >
+              <div class="sector-card__icon" aria-hidden="true">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="8" cy="21" r="1" />
+                  <circle cx="19" cy="21" r="1" />
+                  <path
+                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                  />
+                </svg>
+              </div>
+              <span class="sector-card__name">Distribution</span>
+            </a>
+
+            <a
+              href="./domaines/industrie.html"
+              class="sector-card animate-on-scroll animate-delay-4"
+              role="listitem"
+            >
+              <div class="sector-card__icon" aria-hidden="true">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  />
+                </svg>
+              </div>
+              <span class="sector-card__name">Industrie</span>
+            </a>
+
+            <a
+              href="./domaines/services.html"
+              class="sector-card animate-on-scroll animate-delay-4"
+              role="listitem"
+            >
+              <div class="sector-card__icon" aria-hidden="true">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <span class="sector-card__name">Services</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         À PROPOS
+    ============================================================ -->
+      <section id="apropos" aria-labelledby="apropos-title">
+        <div class="container">
+          <div class="about-grid">
+            <!-- Texte -->
+            <div class="about__text">
+              <div class="section-header animate-on-scroll">
+                <span class="section-label">Notre histoire</span>
+                <h2 class="section-title" id="apropos-title">
+                  Qui sommes-nous&nbsp;?
+                </h2>
+              </div>
+
+              <p class="animate-on-scroll animate-delay-1">
+                dromiss est une filiale de SMODU, dédiée exclusivement à
+                l'implémentation et au support de solutions Odoo. Forts d'une
+                expertise reconnue dans plusieurs secteurs clés, nous
+                accompagnons les entreprises de toutes tailles dans leur
+                digitalisation.
+              </p>
+              <p class="animate-on-scroll animate-delay-2">
+                Notre équipe de consultants certifiés Odoo maîtrise l'ensemble
+                des modules de la suite&nbsp;: CRM, ventes, achats,
+                comptabilité, fabrication, ressources humaines et bien plus
+                encore.
+              </p>
+              <p class="animate-on-scroll animate-delay-3">
+                Nous croyons en un accompagnement de proximité&nbsp;: de l'audit
+                initial à la formation de vos équipes, nous sommes à vos côtés à
+                chaque étape.
+              </p>
+
+              <ul
+                class="about__values animate-on-scroll animate-delay-4"
+                role="list"
+              >
+                <li class="about__value">
+                  <div class="about__value-icon" aria-hidden="true">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <span>Implémentation rapide</span>
+                </li>
+                <li class="about__value">
+                  <div class="about__value-icon" aria-hidden="true">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                  </div>
+                  <span>Formation &amp; accompagnement inclus</span>
+                </li>
+                <li class="about__value">
+                  <div class="about__value-icon" aria-hidden="true">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                      />
+                    </svg>
+                  </div>
+                  <span>Support technique réactif</span>
+                </li>
+                <li class="about__value">
+                  <div class="about__value-icon" aria-hidden="true">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <rect x="3" y="3" width="7" height="7" />
+                      <rect x="14" y="3" width="7" height="7" />
+                      <rect x="3" y="14" width="7" height="7" />
+                      <rect x="14" y="14" width="7" height="7" />
+                    </svg>
+                  </div>
+                  <span>Solutions sur mesure</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Image -->
+            <div class="about__img-wrap animate-on-scroll animate-delay-2">
+              <img
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&h=480&fit=crop&q=80"
+                alt="Équipe dromiss en réunion de travail autour d'un tableau de projets Odoo à Tanger"
+                width="640"
+                height="480"
+                loading="lazy"
+              />
+              <div class="about__accent-bar" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         CONTACT CTA
+    ============================================================ -->
+      <section aria-labelledby="contact-cta-title">
+        <div class="container">
+          <div class="cta-banner animate-on-scroll">
+            <div>
+              <h2 class="cta-banner__title" id="contact-cta-title">
+                Prêt à digitaliser votre activité&nbsp;?
+              </h2>
+              <p class="cta-banner__subtitle">
+                Parlez-nous de votre projet. Notre équipe vous contacte sous 24h
+                pour une première consultation gratuite, sans engagement.
+              </p>
+            </div>
+            <a href="./contact.html" class="btn-primary">
+              Demander une démo gratuite
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+       REVIEWS
+  ============================================================ -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews__header animate-on-scroll">
+          <div class="reviews__eyebrow">Avis clients</div>
+          <h2 class="reviews__title" id="reviews-title">Ce que disent nos clients</h2>
+          <div class="reviews__rating-row">
+            <div class="reviews__stars" aria-label="5 étoiles">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span>5,0 — basé sur des avis Google</span>
+          </div>
+        </div>
+
+        <div class="reviews__grid">
+
+          <!-- Review 1 -->
+          <article class="review-card animate-on-scroll">
+            <div class="review-card__header">
+              <div class="review-card__user">
+                <div class="review-card__avatar" style="background:#1e3a5f;" aria-hidden="true">AA</div>
+                <div>
+                  <div class="review-card__name">Adnane Alami</div>
+                  <div class="review-card__date">Il y a un an</div>
+                </div>
+              </div>
+              <svg class="review-card__google" width="20" height="20" viewBox="0 0 48 48" aria-label="Google" role="img"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+            </div>
+            <div class="review-card__stars" aria-label="5 étoiles">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__text">Excellent accompagnement pour la mise en place d'Odoo dans notre entreprise. L'équipe SMODU a su comprendre nos besoins spécifiques et nous a livré une solution parfaitement adaptée. Suivi professionnel et réactif tout au long du projet.</p>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card animate-on-scroll animate-delay-1">
+            <div class="review-card__header">
+              <div class="review-card__user">
+                <div class="review-card__avatar" style="background:#e8650a;" aria-hidden="true">K</div>
+                <div>
+                  <div class="review-card__name">Kamal</div>
+                  <div class="review-card__date">Il y a un an</div>
+                </div>
+              </div>
+              <svg class="review-card__google" width="20" height="20" viewBox="0 0 48 48" aria-label="Google" role="img"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+            </div>
+            <div class="review-card__stars" aria-label="5 étoiles">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__text">Très bonne expérience avec Dromiss. L'implémentation d'Odoo s'est déroulée sans accroc, l'équipe est compétente et disponible. Notre gestion opérationnelle a nettement gagné en efficacité depuis le déploiement.</p>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card animate-on-scroll animate-delay-2">
+            <div class="review-card__header">
+              <div class="review-card__user">
+                <div class="review-card__avatar" style="background:#2d7a3a;" aria-hidden="true">AA</div>
+                <div>
+                  <div class="review-card__name">Abdellah Aboulachbal</div>
+                  <div class="review-card__date">Il y a un an</div>
+                </div>
+              </div>
+              <svg class="review-card__google" width="20" height="20" viewBox="0 0 48 48" aria-label="Google" role="img"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+            </div>
+            <div class="review-card__stars" aria-label="5 étoiles">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__text">Je recommande vivement Dromiss pour toute implémentation Odoo. Professionnalisme, expertise technique et accompagnement humain sont au rendez-vous. Un partenaire de confiance pour la transformation digitale de votre entreprise.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+
+        <div class="footer__body">
+
+          <!-- Column 1: brand -->
+          <div class="footer__brand">
+            <div class="footer__logo-wrap">
+              <img src="./assets/img/dromiss-logo.png" alt="dromiss" class="footer__logo-img">
+              <div class="footer__logo-text">
+                <span class="footer__logo-name">dromiss</span>
+                <a href="https://smodu.com/" target="_blank" rel="noopener noreferrer" class="footer__logo-smodu">by SMODU</a>
+              </div>
+            </div>
+            <p class="footer__tagline">Solutions Odoo sur mesure pour les entreprises marocaines. De l'audit à la formation, nous sommes à vos côtés.</p>
+          </div>
+
+          <!-- Column 2: contact -->
+          <div class="footer__info">
+            <p class="footer__city">Tanger, Maroc</p>
+            <div class="footer__contacts">
+              <a href="tel:+212500000000" class="footer__contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+                +212 656-196520
+              </a>
+              <a href="mailto:contact@dromiss.ma" class="footer__contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                contact@dromiss.ma
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 3: map -->
+          <div class="footer__map-col">
+            <a href="https://maps.app.goo.gl/Z7BEfBsftG9WY2qh8" target="_blank" rel="noopener noreferrer" class="footer__map-card" aria-label="Voir sur Google Maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.2!2d-5.8177!3d35.7673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b875cf764b759%3A0x178b2b4f21c95c!2sTanger%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1700000000000"
+                title="Tanger sur Google Maps"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                tabindex="-1"
+                aria-hidden="true">
+              </iframe>
+              <div class="footer__map-badge">
+                <span class="footer__map-pill">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Voir sur Google Maps
+                </span>
+                <span class="footer__map-arrow" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 Dromiss by SMODU. Tous droits r&eacute;serv&eacute;s.</p>
+          <p class="footer__copy">Fait avec soin au Maroc &#x1F1F2;&#x1F1E6;</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script type="module" src="./assets/js/ui.js"></script>
+    <script type="module" src="./assets/js/counter.js"></script>
+  </body>
+</html>

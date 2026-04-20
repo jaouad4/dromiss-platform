@@ -1,0 +1,198 @@
+/* ================================================================
+   tokens.css — Design Tokens Dromiss by SMODU
+   Repris exactement du site original (dromiss-website.html)
+   ================================================================ */
+
+/* ── Fonts ─────────────────────────────────────────────────────── */
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap');
+
+/* ── Light Mode (défaut) ────────────────────────────────────────── */
+:root,
+[data-theme="light"] {
+
+  /* Surfaces */
+  --color-bg:              #f8f7f4;
+  --color-surface:         #ffffff;
+  --color-surface-2:       #f3f2ef;
+  --color-surface-offset:  #eceae6;
+  --color-divider:         #dddbd6;
+  --color-border:          #d0ceca;
+
+  /* Texte */
+  --color-text:            #1a1a2e;
+  --color-text-muted:      #6b6a72;
+  --color-text-faint:      #b0afb8;
+  --color-text-inverse:    #f8f7f4;
+
+  /* Primaire — Bleu marine */
+  --color-primary:         #1e3a5f;
+  --color-primary-hover:   #162d4a;
+  --color-primary-active:  #0e2035;
+  --color-primary-highlight: #d1dbe8;
+
+  /* Accent — Orange */
+  --color-accent:          #e8650a;
+  --color-accent-hover:    #cf5508;
+  --color-accent-active:   #b04506;
+  --color-accent-highlight: #f7dfd1;
+
+  /* États */
+  --color-success:         #2d7a3a;
+  --color-success-bg:      oklch(from #2d7a3a l c h / 0.10);
+  --color-error:           #c0392b;
+  --color-error-bg:        oklch(from #c0392b l c h / 0.08);
+
+  /* Ombres (teinte chaude bleutée) */
+  --shadow-sm:  0 1px 3px  oklch(0.2 0.02 250 / 0.07);
+  --shadow-md:  0 4px 16px oklch(0.2 0.02 250 / 0.10);
+  --shadow-lg:  0 12px 40px oklch(0.2 0.02 250 / 0.14);
+
+  /* Bordures alpha */
+  --border-subtle:  oklch(from var(--color-text) l c h / 0.08);
+  --border-medium:  oklch(from var(--color-text) l c h / 0.14);
+  --border-strong:  oklch(from var(--color-text) l c h / 0.22);
+
+  /* Focus ring */
+  --focus-ring: oklch(from var(--color-primary) l c h / 0.25);
+}
+
+/* ── Dark Mode ──────────────────────────────────────────────────── */
+[data-theme="dark"] {
+
+  /* Surfaces */
+  --color-bg:              #0f111a;
+  --color-surface:         #161824;
+  --color-surface-2:       #1c1f2e;
+  --color-surface-offset:  #1a1d2b;
+  --color-divider:         #252838;
+  --color-border:          #2e3248;
+
+  /* Texte */
+  --color-text:            #e2e4f0;
+  --color-text-muted:      #848aab;
+  --color-text-faint:      #4a4f6a;
+  --color-text-inverse:    #0f111a;
+
+  /* Primaire — Bleu clair */
+  --color-primary:         #5b8abf;
+  --color-primary-hover:   #4a78a8;
+  --color-primary-active:  #3a6691;
+  --color-primary-highlight: #1c2d40;
+
+  /* Accent — Orange lumineux */
+  --color-accent:          #f0862a;
+  --color-accent-hover:    #e07520;
+  --color-accent-active:   #c06015;
+  --color-accent-highlight: #3a2510;
+
+  /* États */
+  --color-success:         #5ab869;
+  --color-success-bg:      oklch(from #5ab869 l c h / 0.12);
+  --color-error:           #e05c4a;
+  --color-error-bg:        oklch(from #e05c4a l c h / 0.10);
+
+  /* Ombres (sombres) */
+  --shadow-sm:  0 1px 3px  oklch(0 0 0 / 0.25);
+  --shadow-md:  0 4px 16px oklch(0 0 0 / 0.35);
+  --shadow-lg:  0 12px 40px oklch(0 0 0 / 0.45);
+
+  /* Bordures alpha */
+  --border-subtle: oklch(from var(--color-text) l c h / 0.07);
+  --border-medium: oklch(from var(--color-text) l c h / 0.12);
+  --border-strong: oklch(from var(--color-text) l c h / 0.20);
+
+  /* Focus ring */
+  --focus-ring: oklch(from var(--color-primary) l c h / 0.30);
+}
+
+/* ── System preference fallback ─────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg:              #0f111a;
+    --color-surface:         #161824;
+    --color-surface-2:       #1c1f2e;
+    --color-surface-offset:  #1a1d2b;
+    --color-divider:         #252838;
+    --color-border:          #2e3248;
+    --color-text:            #e2e4f0;
+    --color-text-muted:      #848aab;
+    --color-text-faint:      #4a4f6a;
+    --color-text-inverse:    #0f111a;
+    --color-primary:         #5b8abf;
+    --color-primary-hover:   #4a78a8;
+    --color-primary-active:  #3a6691;
+    --color-primary-highlight: #1c2d40;
+    --color-accent:          #f0862a;
+    --color-accent-hover:    #e07520;
+    --color-accent-active:   #c06015;
+    --color-accent-highlight: #3a2510;
+    --color-success:         #5ab869;
+    --color-success-bg:      oklch(from #5ab869 l c h / 0.12);
+    --color-error:           #e05c4a;
+    --color-error-bg:        oklch(from #e05c4a l c h / 0.10);
+    --shadow-sm:  0 1px 3px  oklch(0 0 0 / 0.25);
+    --shadow-md:  0 4px 16px oklch(0 0 0 / 0.35);
+    --shadow-lg:  0 12px 40px oklch(0 0 0 / 0.45);
+    --border-subtle: oklch(from var(--color-text) l c h / 0.07);
+    --border-medium: oklch(from var(--color-text) l c h / 0.12);
+    --border-strong: oklch(from var(--color-text) l c h / 0.20);
+    --focus-ring: oklch(from var(--color-primary) l c h / 0.30);
+  }
+}
+
+/* ── Typographie ────────────────────────────────────────────────── */
+:root {
+  --font-display: 'Cabinet Grotesk', 'Helvetica Neue', sans-serif;
+  --font-body:    'Satoshi', 'Helvetica Neue', sans-serif;
+
+  /* Échelle fluide */
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+  --text-hero: clamp(2.5rem,   1rem    + 4vw,    4.5rem);
+}
+
+/* ── Espacements (base 4px) ─────────────────────────────────────── */
+:root {
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+}
+
+/* ── Rayons ─────────────────────────────────────────────────────── */
+:root {
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   0.75rem;
+  --radius-xl:   1rem;
+  --radius-2xl:  1.5rem;
+  --radius-full: 9999px;
+}
+
+/* ── Transitions ────────────────────────────────────────────────── */
+:root {
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow:        400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Largeurs de contenu ─────────────────────────────────────────── */
+:root {
+  --content-narrow:  640px;
+  --content-default: 960px;
+  --content-wide:    1200px;
+
+  /* Hauteur navbar (référencée dans les paddings de hero) */
+  --navbar-height: 72px;
+}
