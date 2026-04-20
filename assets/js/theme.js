@@ -4,8 +4,7 @@
   const root   = document.documentElement;
   const toggle = document.querySelector('[data-theme-toggle]');
 
-  let currentTheme = localStorage.getItem('theme')
-    || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  let currentTheme = localStorage.getItem('theme') || 'light';
 
   root.setAttribute('data-theme', currentTheme);
   updateToggleIcon(currentTheme);
@@ -18,13 +17,6 @@
       updateToggleIcon(currentTheme);
     });
   }
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (localStorage.getItem('theme')) return; // user has an explicit preference
-    currentTheme = e.matches ? 'dark' : 'light';
-    root.setAttribute('data-theme', currentTheme);
-    updateToggleIcon(currentTheme);
-  });
 
   function updateToggleIcon(theme) {
     if (!toggle) return;
