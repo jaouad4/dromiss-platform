@@ -213,16 +213,13 @@ async function handleSubmit(form) {
   hideMessage();
 
   // ── 3. Collecter les données ──────────────────────────────────
-// ── 3. Collecter les données ──────────────────────────────────
-const leadData = {
-  name:         document.getElementById('field-name')?.value.trim()    || '',
-  email_from:   document.getElementById('field-email')?.value.trim()   || '',
-  partner_name: document.getElementById('field-company')?.value.trim() || '',
-  phone:        document.getElementById('field-phone')?.value.trim()   || '',
-  secteur:      document.getElementById('field-sector')?.value         || '',
-  description:  document.getElementById('field-message')?.value.trim() || '',
-};
-console.log('📤 Payload envoyé :', leadData); // ← ligne temporaire
+  const leadData = {
+    name:    document.getElementById('field-name')?.value.trim()    || '',
+    email:   document.getElementById('field-email')?.value.trim()   || '',
+    phone:   document.getElementById('field-phone')?.value.trim()   || '',
+    secteur: document.getElementById('field-sector')?.value         || '',
+    message: document.getElementById('field-message')?.value.trim() || '',
+  };
 
   // ── 4. Appel API ──────────────────────────────────────────────
   const result = await submitLead(leadData);
