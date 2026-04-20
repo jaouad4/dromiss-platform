@@ -3,7 +3,7 @@
  * Envoie les leads vers le proxy PHP sécurisé côté serveur.
  */
 
-const ODOO_ENDPOINT = '/api/submit-lead.php';
+const ODOO_ENDPOINT = '/api/submit-lead';
 const TIMEOUT_MS    = 15000;
 
 /**
