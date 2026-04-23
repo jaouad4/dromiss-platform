@@ -139,6 +139,30 @@ docker compose ps
 
 ## 8. Configure Nginx
 
+### 8a. Create the Odoo Admin Password File
+
+The Odoo subdomain (`odoo.dromiss.com`) is protected by HTTP Basic Auth. You must
+create the password file **before** reloading Nginx — otherwise Nginx will fail to start.
+
+```bash
+# Install htpasswd utility
+apt install -y apache2-utils
+
+# Create the password file and add an admin user
+# You will be prompted to enter and confirm a password
+htpasswd -c /etc/nginx/odoo.htpasswd admin
+
+# Restrict read access to root and www-data
+chmod 640 /etc/nginx/odoo.htpasswd
+chown root:www-data /etc/nginx/odoo.htpasswd
+```
+
+> **Keep this password separate from your Odoo login password.**
+> The Basic Auth gate is a first layer that stops automated scanners;
+> your Odoo user password is the second layer.
+
+### 8b. Install Site Configs
+
 ```bash
 # Copy site configs
 cp /var/www/dromiss/infra/nginx/dromiss.conf /etc/nginx/sites-available/dromiss
