@@ -1,4 +1,4 @@
-﻿// Navbar - scroll effect, accessible mobile menu (focus trap + aria), active link highlight.
+// Navbar - scroll effect, accessible mobile menu (focus trap + aria), active link highlight.
 
 (function initNavbarScroll() {
   const navbar = document.getElementById('navbar');

@@ -77,6 +77,7 @@ class LeadForm(BaseModel):
     message: str = ""
     secteur: str = ""
     consent: bool = False
+    website: str = ""  # honeypot — must remain empty
 
     @field_validator("name")
     @classmethod
@@ -132,6 +133,9 @@ async def health() -> dict:
 async def submit_lead(request: Request, form: LeadForm) -> dict:
     client_ip = request.client.host if request.client else "unknown"
     _check_rate_limit(client_ip)
+
+    if form.website:
+        return {"success": True, "message": "Votre demande a bien été envoyée."}
 
     payload = {
         "jsonrpc": "2.0",

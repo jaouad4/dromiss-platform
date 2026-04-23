@@ -9,7 +9,11 @@ try {
   console.error('Component load failed:', e);
 }
 
-await Promise.all([
-  import('./navbar.js'),
-  import('./animations.js'),
-]);
+try {
+  await Promise.all([
+    import('./navbar.js'),
+    import('./animations.js'),
+  ]);
+} catch (e) {
+  console.error('Module load failed:', e);
+}

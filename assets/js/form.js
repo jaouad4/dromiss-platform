@@ -1,4 +1,4 @@
-﻿/**
+/**
  * form.js - Gestion du formulaire de contact dromiss
  *
  * Responsabilités :
