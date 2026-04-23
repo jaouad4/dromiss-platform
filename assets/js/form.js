@@ -214,6 +214,10 @@ function initFormSubmit() {
 }
 
 async function handleSubmit(form) {
+  // ── 0. Honeypot anti-bot ──────────────────────────────────────
+  const honeypot = form.querySelector('[name="website"]');
+  if (honeypot && honeypot.value !== '') return;
+
   // ── 1. Validation ─────────────────────────────────────────────
   const isFormValid    = validateForm();
   const isConsentValid = validateConsent();

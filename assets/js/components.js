@@ -1,6 +1,9 @@
 // Resolves the root path relative to the current page's depth.
-// e.g. /index.html -> "./"  |  /domaines/sante.html -> "../"
-const _segments = window.location.pathname.split('/').filter(Boolean);
+// e.g. /index.html -> "./"  |  /domaines/sante.html -> "../"  |  /contact/ -> "../"
+const _path = window.location.pathname.endsWith('/')
+  ? window.location.pathname + 'index.html'
+  : window.location.pathname;
+const _segments = _path.split('/').filter(Boolean);
 const ROOT = _segments.length > 1 ? '../'.repeat(_segments.length - 1) : './';
 
 async function _inject(placeholderId, file) {
