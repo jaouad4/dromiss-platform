@@ -97,6 +97,21 @@ const VALIDATION_RULES = {
   ],
 };
 
+function validateConsent() {
+  const checkbox = document.getElementById('field-consent');
+  const errorEl  = document.getElementById('field-consent-error');
+  if (!checkbox) return true;
+
+  if (!checkbox.checked) {
+    checkbox.setAttribute('aria-invalid', 'true');
+    if (errorEl) { errorEl.textContent = 'Vous devez accepter la politique de confidentialité.'; errorEl.classList.add('visible'); }
+    return false;
+  }
+  checkbox.removeAttribute('aria-invalid');
+  if (errorEl) { errorEl.textContent = ''; errorEl.classList.remove('visible'); }
+  return true;
+}
+
 /**
  * Valide un champ unique et met à jour son état visuel.
  * @param {HTMLInputElement|HTMLSelectElement|HTMLTextAreaElement} field
@@ -162,15 +177,15 @@ function initFormValidation() {
     const field = document.getElementById(id);
     if (!field) continue;
 
-    // Valider au blur (quand l'utilisateur quitte le champ)
     field.addEventListener('blur', () => validateField(field));
-
-    // Effacer l'erreur dès que l'utilisateur retape
     field.addEventListener('input', () => {
-      if (field.getAttribute('aria-invalid') === 'true') {
-        validateField(field);
-      }
+      if (field.getAttribute('aria-invalid') === 'true') validateField(field);
     });
+  }
+
+  const consent = document.getElementById('field-consent');
+  if (consent) {
+    consent.addEventListener('change', () => validateConsent());
   }
 }
 
@@ -200,9 +215,9 @@ function initFormSubmit() {
 
 async function handleSubmit(form) {
   // ── 1. Validation ─────────────────────────────────────────────
-  const isValid = validateForm();
-  if (!isValid) {
-    // Focus sur le premier champ en erreur
+  const isFormValid    = validateForm();
+  const isConsentValid = validateConsent();
+  if (!isFormValid || !isConsentValid) {
     const firstError = form.querySelector('[aria-invalid="true"]');
     if (firstError) firstError.focus();
     return;
@@ -219,6 +234,7 @@ async function handleSubmit(form) {
     phone:   document.getElementById('field-phone')?.value.trim()   || '',
     secteur: document.getElementById('field-sector')?.value         || '',
     message: document.getElementById('field-message')?.value.trim() || '',
+    consent: document.getElementById('field-consent')?.checked      ?? false,
   };
 
   // ── 4. Appel API ──────────────────────────────────────────────

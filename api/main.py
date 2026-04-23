@@ -76,6 +76,7 @@ class LeadForm(BaseModel):
     phone: str = ""
     message: str = ""
     secteur: str = ""
+    consent: bool = False
 
     @field_validator("name")
     @classmethod
@@ -109,6 +110,13 @@ class LeadForm(BaseModel):
         v = _sanitize(v)
         if v not in ALLOWED_SECTEURS:
             raise ValueError("Secteur non reconnu.")
+        return v
+
+    @field_validator("consent")
+    @classmethod
+    def validate_consent(cls, v: bool) -> bool:
+        if not v:
+            raise ValueError("Le consentement est obligatoire.")
         return v
 
 

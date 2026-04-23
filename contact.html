@@ -886,6 +886,28 @@
                     </button>
                   </div>
 
+                  <!-- Consentement RGPD -->
+                  <div class="form-group form-group--consent">
+                    <label class="form-label form-label--consent">
+                      <input
+                        type="checkbox"
+                        id="field-consent"
+                        name="consent"
+                        required
+                        aria-required="true"
+                        aria-describedby="field-consent-error"
+                      />
+                      J'accepte que mes données soient traitées conformément à la
+                      <a href="./politique-confidentialite.html" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>
+                      de Dromiss. <span aria-hidden="true">*</span>
+                    </label>
+                    <span
+                      id="field-consent-error"
+                      class="form-error-msg"
+                      role="alert"
+                    ></span>
+                  </div>
+
                   <!-- Bouton submit -->
                   <button type="submit" class="btn-submit" id="btn-submit">
                     <span
@@ -909,17 +931,6 @@
                     </svg>
                   </button>
 
-                  <p
-                    style="
-                      font-size: var(--text-xs);
-                      color: var(--color-text-faint);
-                      text-align: center;
-                      margin-top: var(--space-4);
-                    "
-                  >
-                    En soumettant ce formulaire, vous acceptez d'être contacté
-                    par notre équipe.
-                  </p>
                 </form>
               </div>
             </div>
