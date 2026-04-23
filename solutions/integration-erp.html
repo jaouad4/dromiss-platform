@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intégration ERP Odoo — Gestion complète de l'entreprise — Dromiss by SMODU</title>
+    <link rel="icon" type="image/png" href="../assets/img/dromiss-small-logo.png">
+    <meta name="description" content="Déployez Odoo ERP pour centraliser ventes, achats, stocks, comptabilité et RH dans un seul système. Dromiss intègre et configure votre ERP Odoo en moins de 4 mois au Maroc." />
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages/domaine.css" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://api.fontshare.com; font-src https://api.fontshare.com https://cdn.fontshare.com; img-src 'self' https://images.unsplash.com data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://dromiss.com/solutions/integration-erp.html">
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Passer au contenu principal</a>
+    <header>
+      <nav class="navbar" id="navbar" aria-label="Navigation principale">
+        <div class="navbar__inner">
+          <div class="navbar__brand">
+            <a href="../index.html" class="navbar__logo" aria-label="dromiss — retour accueil"><img src="../assets/img/dromiss-big-logo.png" alt="dromiss" height="36" /></a>
+            <a href="https://smodu.com/" target="_blank" rel="noopener noreferrer" class="navbar__logo-smodu">by SMODU</a>
+          </div>
+          <ul class="navbar__nav" role="list">
+            <li><a href="../index.html#apropos">À propos</a></li>
+            <li class="navbar__has-dropdown">
+              <button class="navbar__nav-trigger" aria-expanded="false" aria-haspopup="true">Services<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+              <ul class="navbar__dropdown">
+                <li><a href="../services/strategie-consulting.html"><span class="navbar__dd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.6-1.4 4.9-3.5 6.2V17a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1.8C5.4 13.9 4 11.6 4 9a7 7 0 0 1 8-7z"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Stratégie et Consulting</span><span class="navbar__dd-desc">Accompagnement stratégique &amp; transformation digitale</span></span></a></li>
+                <li><a href="../services/marketing-automation.html"><span class="navbar__dd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Marketing et Automation</span><span class="navbar__dd-desc">Campagnes automatisées &amp; génération de leads</span></span></a></li>
+                <li><a href="../services/inbound-marketing.html"><span class="navbar__dd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Inbound Marketing</span><span class="navbar__dd-desc">Attirer, convertir et fidéliser vos clients</span></span></a></li>
+              </ul>
+            </li>
+            <li class="navbar__has-dropdown">
+              <button class="navbar__nav-trigger" aria-expanded="false" aria-haspopup="true">Solutions<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+              <ul class="navbar__dropdown">
+                <li><a href="./integration-crm.html"><span class="navbar__dd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Intégration CRM</span><span class="navbar__dd-desc">HubSpot, Salesforce &amp; Microsoft Dynamics</span></span></a></li>
+                <li><a href="./integration-erp.html"><span class="navbar__dd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Intégration ERP</span><span class="navbar__dd-desc">Odoo, SAP &amp; ERP personnalisés avec IA</span></span></a></li>
+                <li><a href="./business-intelligence.html"><span class="navbar__dd-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Business Intelligence</span><span class="navbar__dd-desc">Power BI, Tableau &amp; tableaux de bord prédictifs</span></span></a></li>
+              </ul>
+            </li>
+            <li class="navbar__has-dropdown">
+              <button class="navbar__nav-trigger" aria-expanded="false" aria-haspopup="true">Secteurs<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+              <ul class="navbar__dropdown navbar__dropdown--sectors">
+                <li><a href="../domaines/sante.html"><span class="navbar__dd-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Santé &amp; Pharmacie</span></span></a></li>
+                <li><a href="../domaines/hotellerie.html"><span class="navbar__dd-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Hôtellerie</span></span></a></li>
+                <li><a href="../domaines/immobilier.html"><span class="navbar__dd-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Immobilier</span></span></a></li>
+                <li><a href="../domaines/distribution.html"><span class="navbar__dd-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Distribution</span></span></a></li>
+                <li><a href="../domaines/industrie.html"><span class="navbar__dd-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Industrie</span></span></a></li>
+                <li><a href="../domaines/services.html"><span class="navbar__dd-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span><span class="navbar__dd-text"><span class="navbar__dd-title">Services</span></span></a></li>
+              </ul>
+            </li>
+            <li><a href="../blog.html">Blogs</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="navbar__actions">
+            <a href="../contact.html" class="btn-demo">Demander une démo</a>
+            <button class="theme-toggle" data-theme-toggle aria-label="Activer le mode sombre"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+            <button class="hamburger" id="hamburger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+          </div>
+        </div>
+      </nav>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Navigation mobile" aria-hidden="true">
+        <a href="../index.html#apropos" class="mobile-nav-link">À propos</a>
+        <span class="mobile-nav-heading">Services</span>
+        <a href="../services/strategie-consulting.html" class="mobile-nav-link mobile-nav-sub">Stratégie et Consulting</a>
+        <a href="../services/marketing-automation.html" class="mobile-nav-link mobile-nav-sub">Marketing et Automation</a>
+        <a href="../services/inbound-marketing.html" class="mobile-nav-link mobile-nav-sub">Inbound Marketing</a>
+        <span class="mobile-nav-heading">Solutions</span>
+        <a href="./integration-crm.html" class="mobile-nav-link mobile-nav-sub">Intégration CRM</a>
+        <a href="./integration-erp.html" class="mobile-nav-link mobile-nav-sub">Intégration ERP</a>
+        <a href="./business-intelligence.html" class="mobile-nav-link mobile-nav-sub">Business Intelligence</a>
+        <span class="mobile-nav-heading">Secteurs</span>
+        <a href="../domaines/sante.html" class="mobile-nav-link mobile-nav-sub">Santé &amp; Pharmacie</a>
+        <a href="../domaines/hotellerie.html" class="mobile-nav-link mobile-nav-sub">Hôtellerie</a>
+        <a href="../domaines/immobilier.html" class="mobile-nav-link mobile-nav-sub">Immobilier</a>
+        <a href="../domaines/distribution.html" class="mobile-nav-link mobile-nav-sub">Distribution</a>
+        <a href="../domaines/industrie.html" class="mobile-nav-link mobile-nav-sub">Industrie</a>
+        <a href="../domaines/services.html" class="mobile-nav-link mobile-nav-sub">Services</a>
+        <a href="../blog.html" class="mobile-nav-link">Blogs</a>
+        <a href="../contact.html" class="mobile-nav-link">Contact</a>
+        <a href="../contact.html" class="btn-demo-mobile">Demander une démo</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="domain-hero" aria-labelledby="domain-hero-title">
+        <div class="container">
+          <div class="domain-hero__grid">
+            <div>
+              <ol class="domain-hero__breadcrumb animate-on-scroll" aria-label="Fil d'Ariane">
+                <li><a href="../index.html">Accueil</a></li>
+                <li aria-hidden="true" class="domain-hero__breadcrumb-sep">›</li>
+                <li>Solutions</li>
+                <li aria-hidden="true" class="domain-hero__breadcrumb-sep">›</li>
+                <li aria-current="page">Intégration ERP</li>
+              </ol>
+              <div class="domain-hero__label animate-on-scroll animate-delay-1" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                Intégration ERP
+              </div>
+              <h1 class="domain-hero__title animate-on-scroll animate-delay-2" id="domain-hero-title">
+                Tous vos départements<br /><span>dans un seul système</span>
+              </h1>
+              <p class="domain-hero__desc animate-on-scroll animate-delay-3">
+                Odoo ERP connecte vos ventes, achats, stocks, comptabilité, RH et production dans une plateforme unifiée. Fini les exports Excel, les saisies en double et les données contradictoires entre services. Dromiss déploie Odoo adapté à votre secteur et votre taille.
+              </p>
+              <div class="domain-hero__ctas animate-on-scroll animate-delay-4">
+                <a href="../contact.html" class="btn-primary">Demander un audit ERP<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="#modules" class="btn-secondary">Voir les modules</a>
+              </div>
+              <div class="domain-hero__highlights animate-on-scroll animate-delay-4" aria-label="Points forts">
+                <div class="domain-hero__highlight"><span class="domain-hero__highlight-check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Plan comptable marocain (PCM) pré-configuré</div>
+                <div class="domain-hero__highlight"><span class="domain-hero__highlight-check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Modules activés uniquement selon vos besoins</div>
+                <div class="domain-hero__highlight"><span class="domain-hero__highlight-check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Migration de vos données existantes incluse</div>
+                <div class="domain-hero__highlight"><span class="domain-hero__highlight-check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Déploiement cloud ou on-premise selon votre préférence</div>
+              </div>
+            </div>
+            <div class="domain-hero__visual animate-on-scroll animate-delay-2">
+              <div class="domain-hero__img-wrap">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=525&fit=crop&q=80" alt="Tableau de bord ERP Odoo unifiant ventes, stocks, comptabilité et ressources humaines" width="700" height="525" loading="eager"/>
+                <div class="domain-hero__img-bar" aria-hidden="true"></div>
+              </div>
+              <div class="domain-hero__stat-float" aria-label="70% de temps administratif économisé">
+                <span class="domain-hero__stat-value">-70%</span>
+                <span class="domain-hero__stat-label">Tâches admin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Chiffres clés ERP Odoo">
+        <div class="container">
+          <div class="domain-stats-band animate-on-scroll">
+            <div class="domain-stat"><div class="domain-stat__value">1 système</div><div class="domain-stat__label">Pour remplacer Excel, comptabilité et outils disparates</div></div>
+            <div class="domain-stat"><div class="domain-stat__value">4 mois</div><div class="domain-stat__label">Déploiement ERP complet, modules principaux opérationnels</div></div>
+            <div class="domain-stat"><div class="domain-stat__value">-30%</div><div class="domain-stat__label">De coûts opérationnels mesurés après 12 mois d'utilisation</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modules" aria-labelledby="modules-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Modules déployés</span>
+            <h2 class="section-title" id="modules-title">L'ERP Odoo par Dromiss</h2>
+            <p class="section-subtitle">Nous sélectionnons et configurons uniquement les modules dont vous avez besoin — sans complexité inutile, sans surcoût.</p>
+          </div>
+          <div class="modules-grid">
+            <article class="module-card animate-on-scroll">
+              <div class="module-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <h3 class="module-card__title">Ventes &amp; Facturation</h3>
+              <p class="module-card__desc">Devis professionnels en un clic, conversion automatique en bon de commande et facture, gestion des conditions de paiement, suivi des règlements et relances automatiques. Catalogue produits avec prix multi-niveaux.</p>
+              <div class="module-card__tags"><span class="module-tag">Devis</span><span class="module-tag">Facturation</span><span class="module-tag">Multi-devises</span></div>
+            </article>
+            <article class="module-card animate-on-scroll animate-delay-1">
+              <div class="module-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+              <h3 class="module-card__title">Achats &amp; Stocks</h3>
+              <p class="module-card__desc">Bons de commande fournisseurs, réceptions automatiques en stock, gestion multi-entrepôts, règles de réapprovisionnement, inventaires tournants. Trçabilité complète par lot et numéro de série.</p>
+              <div class="module-card__tags"><span class="module-tag">Multi-entrepôts</span><span class="module-tag">Traçabilité</span><span class="module-tag">Réapprovisionnement</span></div>
+            </article>
+            <article class="module-card animate-on-scroll animate-delay-2">
+              <div class="module-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              <h3 class="module-card__title">Comptabilité Maroc</h3>
+              <p class="module-card__desc">Plan comptable marocain (PCM) intégré, déclarations TVA conformes DGI, gestion des effets de commerce, rapports bilan et compte de résultat selon les normes CGNC. Clôtures mensuelles simplifiées.</p>
+              <div class="module-card__tags"><span class="module-tag">PCM</span><span class="module-tag">TVA DGI</span><span class="module-tag">CGNC</span></div>
+            </article>
+            <article class="module-card animate-on-scroll animate-delay-3">
+              <div class="module-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <h3 class="module-card__title">Ressources Humaines</h3>
+              <p class="module-card__desc">Gestion des employés, suivi des présences et absences, gestion des congés, fiches de paie conformes au droit du travail marocain, notes de frais et évaluations de performance.</p>
+              <div class="module-card__tags"><span class="module-tag">Paie Maroc</span><span class="module-tag">Congés</span><span class="module-tag">Évaluations</span></div>
+            </article>
+            <article class="module-card animate-on-scroll">
+              <div class="module-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+              <h3 class="module-card__title">Fabrication (MRP)</h3>
+              <p class="module-card__desc">Nomenclatures (BoM), ordres de fabrication, suivi de production en temps réel, gestion des postes de charge et centres de coût. Calcul des coûts de revient par produit fini. Pour les PME industrielles et artisanales.</p>
+              <div class="module-card__tags"><span class="module-tag">Nomenclatures</span><span class="module-tag">MRP</span><span class="module-tag">Coûts</span></div>
+            </article>
+            <article class="module-card animate-on-scroll animate-delay-1">
+              <div class="module-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+              <h3 class="module-card__title">Gestion de projets</h3>
+              <p class="module-card__desc">Planification en vue Kanban ou Gantt, suivi des tâches par jalons, gestion des timesheets, facturation au temps passé ou au forfait. Idéal pour les sociétés de services, cabinets et agences.</p>
+              <div class="module-card__tags"><span class="module-tag">Gantt</span><span class="module-tag">Timesheets</span><span class="module-tag">Facturation projet</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-header section-header--center animate-on-scroll">
+            <span class="section-label">Déploiement</span>
+            <h2 class="section-title" id="process-title">Notre méthode de déploiement ERP</h2>
+            <p class="section-subtitle">Un projet structuré, livré par phases pour minimiser les risques et maximiser l'adoption.</p>
+          </div>
+          <div class="process-steps">
+            <div class="process-step animate-on-scroll">
+              <div class="process-step__number" aria-hidden="true">1</div>
+              <h3 class="process-step__title">Cadrage &amp; Scoping</h3>
+              <p class="process-step__desc">Définition du périmètre fonctionnel, choix des modules, plan de projet et budget détaillé.</p>
+            </div>
+            <div class="process-step animate-on-scroll animate-delay-1">
+              <div class="process-step__number" aria-hidden="true">2</div>
+              <h3 class="process-step__title">Configuration &amp; Paramétrages</h3>
+              <p class="process-step__desc">Installation Odoo, configuration des modules, personnalisations spécifiques et intégrations tierces.</p>
+            </div>
+            <div class="process-step animate-on-scroll animate-delay-2">
+              <div class="process-step__number" aria-hidden="true">3</div>
+              <h3 class="process-step__title">Migration &amp; Tests</h3>
+              <p class="process-step__desc">Import des données historiques, recette fonctionnelle avec vos utilisateurs clés, corrections et validation.</p>
+            </div>
+            <div class="process-step animate-on-scroll animate-delay-3">
+              <div class="process-step__number" aria-hidden="true">4</div>
+              <h3 class="process-step__title">Formation &amp; Go-Live</h3>
+              <p class="process-step__desc">Formation de toutes les équipes, démarrage en production, hypercare pendant 30 jours et support continu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="domain-cta-title">
+        <div class="container">
+          <div class="domain-cta animate-on-scroll">
+            <div class="domain-cta__label" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Audit ERP gratuit</div>
+            <h2 class="domain-cta__title" id="domain-cta-title">Prêt à unifier votre gestion d'entreprise&nbsp;?</h2>
+            <p class="domain-cta__desc">Décrivez-nous vos processus actuels et vos blocages. Nous vous proposons un schéma de déploiement Odoo adapté à votre taille et votre budget — avec une estimation du ROI avant tout engagement.</p>
+            <div class="domain-cta__actions">
+              <a href="../contact.html" class="btn-cta-primary">Demander un audit ERP<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="tel:+212656196520" class="btn-cta-ghost"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Nous appeler</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__brand">
+            <div class="footer__logo-wrap">
+              <img src="../assets/img/dromiss-big-logo.png" alt="dromiss" class="footer__logo-img">
+              <div class="footer__logo-text"><span class="footer__logo-name">Dromiss</span><a href="https://smodu.com/" target="_blank" rel="noopener noreferrer" class="footer__logo-smodu">by SMODU</a></div>
+            </div>
+            <p class="footer__tagline">Solutions Odoo sur mesure pour les entreprises marocaines. De l'audit à la formation, nous sommes à vos côtés.</p>
+          </div>
+          <div class="footer__info">
+            <p class="footer__city">Tanger, Maroc</p>
+            <div class="footer__contacts">
+              <a href="tel:+212656196520" class="footer__contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>+212 656-196520</a>
+              <a href="mailto:contact@dromiss.ma" class="footer__contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contact@dromiss.ma</a>
+            </div>
+          </div>
+          <div class="footer__map-col">
+            <a href="https://maps.app.goo.gl/Z7BEfBsftG9WY2qh8" target="_blank" rel="noopener noreferrer" class="footer__map-card" aria-label="Voir sur Google Maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.2!2d-5.8177!3d35.7673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b875cf764b759%3A0x178b2b4f21c95c!2sTanger%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1700000000000" title="Tanger sur Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1" aria-hidden="true"></iframe>
+              <div class="footer__map-badge"><span class="footer__map-pill"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Voir sur Google Maps</span><span class="footer__map-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></div>
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 Dromiss by SMODU. Tous droits r&eacute;serv&eacute;s.</p>
+          <p class="footer__copy">Fait avec soin au Maroc &#x1F1F2;&#x1F1E6;</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../assets/js/ui.js"></script>
+  </body>
+</html>
