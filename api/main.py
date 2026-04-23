@@ -1,10 +1,10 @@
-# =============================================================================
-# Dromiss FastAPI Proxy — Secure Odoo CRM Lead Submission
+﻿# =============================================================================
+# Dromiss FastAPI Proxy - Secure Odoo CRM Lead Submission
 #
 # Required environment variables (set in /etc/dromiss/api.env on the VPS):
-#   ODOO_URL     — Base URL of the Odoo instance, e.g. https://odoo.dromiss.com
-#   ODOO_API_KEY — API key generated in Odoo: Settings → Technical → API Keys
-#   ODOO_DB      — Odoo database name, e.g. odoo
+#   ODOO_URL     - Base URL of the Odoo instance, e.g. https://odoo.dromiss.com
+#   ODOO_API_KEY - API key generated in Odoo: Settings → Technical → API Keys
+#   ODOO_DB      - Odoo database name, e.g. odoo
 #
 # Run with: gunicorn main:app -c gunicorn.conf.py
 # =============================================================================
@@ -19,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr, field_validator
 
 # ---------------------------------------------------------------------------
-# Config — fail fast at startup if any required env var is missing
+# Config - fail fast at startup if any required env var is missing
 # ---------------------------------------------------------------------------
 ODOO_URL = os.environ.get("ODOO_URL", "")
 ODOO_API_KEY = os.environ.get("ODOO_API_KEY", "")
@@ -44,7 +44,7 @@ app.add_middleware(
 )
 
 # ---------------------------------------------------------------------------
-# Rate limiting — 1 request per 60 seconds per IP (in-memory)
+# Rate limiting - 1 request per 60 seconds per IP (in-memory)
 # ---------------------------------------------------------------------------
 _rate_limit: dict[str, float] = defaultdict(float)
 RATE_LIMIT_SECONDS = 60
@@ -142,7 +142,7 @@ async def submit_lead(request: Request, form: LeadForm) -> dict:
             "method": "create",
             "args": [
                 {
-                    "name": f"{form.name} — Demande Dromiss",
+                    "name": f"{form.name} - Demande Dromiss",
                     "contact_name": form.name,
                     "email_from": form.email,
                     "phone": form.phone,

@@ -1,5 +1,5 @@
-/**
- * odoo-api.js — Module d'intégration CRM dromiss
+﻿/**
+ * odoo-api.js - Module d'intégration CRM dromiss
  * Envoie les leads vers le proxy PHP sécurisé côté serveur.
  */
 

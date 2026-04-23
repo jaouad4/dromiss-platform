@@ -1,5 +1,5 @@
-/**
- * form.js — Gestion du formulaire de contact dromiss
+﻿/**
+ * form.js - Gestion du formulaire de contact dromiss
  *
  * Responsabilités :
  * - Pré-remplir le champ "secteur" depuis ?secteur= dans l'URL

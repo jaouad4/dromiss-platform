@@ -1,4 +1,4 @@
-# Dromiss Platform — VPS Deployment Guide
+﻿# Dromiss Platform - VPS Deployment Guide
 
 Production stack: **Nginx** (static site + reverse proxy) · **Docker Compose** (Odoo 18 + PostgreSQL 17) · **Python FastAPI + Gunicorn** (form proxy, managed by systemd)
 
@@ -15,7 +15,7 @@ apt update && apt upgrade -y
 # Install essentials
 apt install -y curl git ufw
 
-# Configure firewall — allow only SSH, HTTP, HTTPS
+# Configure firewall - allow only SSH, HTTP, HTTPS
 ufw allow 22/tcp
 ufw allow 80/tcp
 ufw allow 443/tcp
@@ -126,7 +126,7 @@ cd /var/www/dromiss
 # Create .env from the example and set a strong Postgres password (min 20 chars)
 cp .env.example .env
 nano .env
-# Edit POSTGRES_PASSWORD — use a long random string
+# Edit POSTGRES_PASSWORD - use a long random string
 
 # Start containers in the background
 docker compose up -d
@@ -142,7 +142,7 @@ docker compose ps
 ### 8a. Create the Odoo Admin Password File
 
 The Odoo subdomain (`odoo.dromiss.com`) is protected by HTTP Basic Auth. You must
-create the password file **before** reloading Nginx — otherwise Nginx will fail to start.
+create the password file **before** reloading Nginx - otherwise Nginx will fail to start.
 
 ```bash
 # Install htpasswd utility
@@ -198,7 +198,7 @@ Wait for DNS propagation (typically under 1 hour, up to 24 hours).
 ## 10. Install SSL Certificates
 
 ```bash
-# Issue certificates — Certbot will auto-update the Nginx config for HTTPS
+# Issue certificates - Certbot will auto-update the Nginx config for HTTPS
 certbot --nginx -d dromiss.com -d www.dromiss.com
 certbot --nginx -d odoo.dromiss.com
 
@@ -231,7 +231,7 @@ systemctl status dromiss-api
 ## 12. Set Up Odoo
 
 1. Navigate to **https://odoo.dromiss.com** in your browser.
-2. Create the database — use the same name as `ODOO_DB` in your `.env` (default: `odoo`).
+2. Create the database - use the same name as `ODOO_DB` in your `.env` (default: `odoo`).
 3. Install the **CRM** module: Apps → search "CRM" → Install.
 4. Generate an API key: **Settings → Technical → API Keys → New**.
 5. Copy the key into `/etc/dromiss/api.env` as `ODOO_API_KEY`.

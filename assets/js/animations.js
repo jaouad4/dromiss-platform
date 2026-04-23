@@ -1,4 +1,4 @@
-// Scroll animations — reveals .animate-on-scroll elements via IntersectionObserver.
+﻿// Scroll animations - reveals .animate-on-scroll elements via IntersectionObserver.
 // Respects prefers-reduced-motion: shows all elements immediately if enabled.
 
 (function initScrollAnimations() {

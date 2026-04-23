@@ -1,4 +1,4 @@
-// Dark mode — persists user choice in localStorage, falls back to system preference.
+﻿// Dark mode - persists user choice in localStorage, falls back to system preference.
 
 (function initTheme() {
   const root   = document.documentElement;

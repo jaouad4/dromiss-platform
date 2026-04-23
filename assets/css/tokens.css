@@ -1,10 +1,10 @@
-/* ================================================================
-   tokens.css — Design Tokens Dromiss by SMODU
+﻿/* ================================================================
+   tokens.css - Design Tokens Dromiss by SMODU
    Repris exactement du site original (dromiss-website.html)
    ================================================================ */
 
 /* ── Fonts ─────────────────────────────────────────────────────── */
-/* Loaded via <link> in HTML — no @import needed here */
+/* Loaded via <link> in HTML - no @import needed here */
 
 /* ── Light Mode (défaut) ────────────────────────────────────────── */
 :root,
@@ -24,13 +24,13 @@
   --color-text-faint:      #b0afb8;
   --color-text-inverse:    #f8f7f4;
 
-  /* Primaire — Bleu marine */
+  /* Primaire - Bleu marine */
   --color-primary:         #1e3a5f;
   --color-primary-hover:   #162d4a;
   --color-primary-active:  #0e2035;
   --color-primary-highlight: #d1dbe8;
 
-  /* Accent — Orange */
+  /* Accent - Orange */
   --color-accent:          #e8650a;
   --color-accent-hover:    #cf5508;
   --color-accent-active:   #b04506;
@@ -73,13 +73,13 @@
   --color-text-faint:      #4a4f6a;
   --color-text-inverse:    #0f111a;
 
-  /* Primaire — Bleu clair */
+  /* Primaire - Bleu clair */
   --color-primary:         #5b8abf;
   --color-primary-hover:   #4a78a8;
   --color-primary-active:  #3a6691;
   --color-primary-highlight: #1c2d40;
 
-  /* Accent — Orange lumineux */
+  /* Accent - Orange lumineux */
   --color-accent:          #f0862a;
   --color-accent-hover:    #e07520;
   --color-accent-active:   #c06015;
