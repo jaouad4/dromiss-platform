@@ -57,6 +57,8 @@
 }
 
 /* ── Dark Mode ──────────────────────────────────────────────────── */
+/* Two blocks are intentional: first covers JS-driven theme toggle,
+   second covers no-JS system preference. KEEP BOTH IN SYNC. */
 [data-theme="dark"] {
 
   /* Surfaces */
@@ -105,7 +107,7 @@
   --focus-ring: oklch(from var(--color-primary) l c h / 0.30);
 }
 
-/* ── System preference fallback ─────────────────────────────────── */
+/* ── System preference fallback (no-JS) ─────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     --color-bg:              #0f111a;

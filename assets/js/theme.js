@@ -4,7 +4,9 @@
   const root   = document.documentElement;
   const toggle = document.querySelector('[data-theme-toggle]');
 
-  let currentTheme = localStorage.getItem('theme') || 'light';
+  let stored;
+  try { stored = localStorage.getItem('theme'); } catch { stored = null; }
+  let currentTheme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
   root.setAttribute('data-theme', currentTheme);
   updateToggleIcon(currentTheme);
@@ -13,7 +15,7 @@
     toggle.addEventListener('click', () => {
       currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', currentTheme);
-      localStorage.setItem('theme', currentTheme);
+      try { localStorage.setItem('theme', currentTheme); } catch { /* sandboxed */ }
       updateToggleIcon(currentTheme);
     });
   }

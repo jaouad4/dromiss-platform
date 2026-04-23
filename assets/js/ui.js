@@ -3,7 +3,11 @@
 import { loadComponents } from './components.js';
 import './theme.js';
 
-await loadComponents();
+try {
+  await loadComponents();
+} catch (e) {
+  console.error('Component load failed:', e);
+}
 
 await Promise.all([
   import('./navbar.js'),

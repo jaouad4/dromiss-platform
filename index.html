@@ -15,6 +15,10 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://dromiss.com/assets/img/dromiss-big-logo.png">
     <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dromiss - Solutions Odoo sur mesure au Maroc">
+    <meta name="twitter:description" content="Dromiss by SMODU accompagne les entreprises dans leur transformation digitale grâce à des solutions ERP et CRM Odoo adaptées à leur secteur.">
+    <meta name="twitter:image" content="https://dromiss.com/assets/img/dromiss-big-logo.png">
 
     <!-- Fonts -->
     <link
@@ -24,6 +28,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/tokens.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
     <link rel="stylesheet" href="./assets/css/pages/home.css" />
 
@@ -125,6 +130,7 @@
                   width="700"
                   height="525"
                   loading="eager"
+                  fetchpriority="high"
                 />
               </div>
 
@@ -281,11 +287,10 @@
             </p>
           </div>
 
-          <div class="sectors-row" role="list">
-            <a
+          <ul class="sectors-row">
+            <li><a
               href="./domaines/sante.html"
               class="sector-card animate-on-scroll"
-              role="listitem"
             >
               <div class="sector-card__icon" aria-hidden="true">
                 <svg
@@ -302,12 +307,11 @@
                 </svg>
               </div>
               <span class="sector-card__name">Santé &amp; Pharmacie</span>
-            </a>
+            </a></li>
 
-            <a
+            <li><a
               href="./domaines/hotellerie.html"
               class="sector-card animate-on-scroll animate-delay-1"
-              role="listitem"
             >
               <div class="sector-card__icon" aria-hidden="true">
                 <svg
@@ -323,12 +327,11 @@
                 </svg>
               </div>
               <span class="sector-card__name">Hôtellerie</span>
-            </a>
+            </a></li>
 
-            <a
+            <li><a
               href="./domaines/immobilier.html"
               class="sector-card animate-on-scroll animate-delay-2"
-              role="listitem"
             >
               <div class="sector-card__icon" aria-hidden="true">
                 <svg
@@ -344,12 +347,11 @@
                 </svg>
               </div>
               <span class="sector-card__name">Immobilier</span>
-            </a>
+            </a></li>
 
-            <a
+            <li><a
               href="./domaines/distribution.html"
               class="sector-card animate-on-scroll animate-delay-3"
-              role="listitem"
             >
               <div class="sector-card__icon" aria-hidden="true">
                 <svg
@@ -368,12 +370,11 @@
                 </svg>
               </div>
               <span class="sector-card__name">Distribution</span>
-            </a>
+            </a></li>
 
-            <a
+            <li><a
               href="./domaines/industrie.html"
               class="sector-card animate-on-scroll animate-delay-4"
-              role="listitem"
             >
               <div class="sector-card__icon" aria-hidden="true">
                 <svg
@@ -390,12 +391,11 @@
                 </svg>
               </div>
               <span class="sector-card__name">Industrie</span>
-            </a>
+            </a></li>
 
-            <a
+            <li><a
               href="./domaines/services.html"
               class="sector-card animate-on-scroll animate-delay-4"
-              role="listitem"
             >
               <div class="sector-card__icon" aria-hidden="true">
                 <svg
@@ -410,8 +410,8 @@
                 </svg>
               </div>
               <span class="sector-card__name">Services</span>
-            </a>
-          </div>
+            </a></li>
+          </ul>
         </div>
       </section>
 
@@ -569,12 +569,10 @@
           </div>
         </div>
       </section>
-    </main>
-
-    <!-- ============================================================
-       REVIEWS
-  ============================================================ -->
-    <section class="reviews" aria-labelledby="reviews-title">
+      <!-- ============================================================
+         REVIEWS
+      ============================================================ -->
+      <section class="reviews" aria-labelledby="reviews-title">
       <div class="container">
         <div class="reviews__header animate-on-scroll">
           <div class="reviews__eyebrow">Avis clients</div>
@@ -661,7 +659,8 @@
 
         </div>
       </div>
-    </section>
+      </section>
+    </main>
     <div id="footer-placeholder"></div>
 
     <!-- JS -->
