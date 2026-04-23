@@ -65,6 +65,7 @@
           </div>
 
           <ul class="navbar__nav" role="list">
+            <li><a href="#apropos">À propos</a></li>
             <li class="navbar__has-dropdown">
               <button
                 class="navbar__nav-trigger"
@@ -415,7 +416,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="#apropos">À propos</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
 
@@ -469,6 +470,7 @@
         aria-label="Navigation mobile"
         aria-hidden="true"
       >
+        <a href="#apropos" class="mobile-nav-link">À propos</a>
         <span class="mobile-nav-heading">Services</span>
         <a href="#" class="mobile-nav-link mobile-nav-sub"
           >Stratégie et Consulting</a
@@ -490,7 +492,7 @@
         <a
           href="./domaines/hotellerie.html"
           class="mobile-nav-link mobile-nav-sub"
-          >Hôtellerie &amp; Restauration</a
+          >Hôtellerie</a
         >
         <a
           href="./domaines/immobilier.html"
@@ -512,7 +514,7 @@
           class="mobile-nav-link mobile-nav-sub"
           >Services</a
         >
-        <a href="#apropos" class="mobile-nav-link">À propos</a>
+        <a href="./blog.html" class="mobile-nav-link">Blogs</a>
         <a href="./contact.html" class="mobile-nav-link">Contact</a>
         <a href="./contact.html" class="btn-demo-mobile">Demander une démo</a>
       </nav>
@@ -558,7 +560,7 @@
               </p>
 
               <div class="hero__ctas animate-on-scroll animate-delay-3">
-                <a href="#solutions" class="btn-primary">
+                <a href="#secteurs" class="btn-primary">
                   Découvrir nos solutions
                   <svg
                     width="16"
@@ -583,7 +585,7 @@
               >
                 <div class="hero__stat">
                   <span class="hero__stat-dot" aria-hidden="true"></span>
-                  50+ entreprises accompagnées
+                  20+ entreprises accompagnées
                 </div>
                 <div class="hero__stat">
                   <span class="hero__stat-dot" aria-hidden="true"></span>
@@ -621,7 +623,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                50+ entreprises
+                20+ entreprises
               </div>
 
               <div class="hero-badge hero-badge--2" aria-hidden="true">
@@ -744,221 +746,6 @@
         </div>
       </section>
 
-      <!-- ============================================================
-         SOLUTIONS
-    ============================================================ -->
-      <section id="solutions" aria-labelledby="solutions-title">
-        <div class="container">
-          <div class="section-header section-header--center animate-on-scroll">
-            <span class="section-label">Nos expertises</span>
-            <h2 class="section-title" id="solutions-title">
-              Nos Solutions Odoo
-            </h2>
-            <p class="section-subtitle">
-              Des modules adaptés à chaque secteur pour optimiser vos opérations
-              et accélérer votre croissance.
-            </p>
-          </div>
-
-          <div class="solutions-grid">
-            <!-- Santé & Pharmacie -->
-            <article class="solution-card animate-on-scroll">
-              <div class="solution-card__icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
-                  />
-                </svg>
-              </div>
-              <h3 class="solution-card__title">Odoo Santé & Pharmacie</h3>
-              <p class="solution-card__desc">
-                Gestion des stocks médicaments, ordonnances, POS pharmacie,
-                traçabilité et conformité réglementaire. Une solution complète
-                conforme aux exigences du secteur pharmaceutique.
-              </p>
-              <a
-                href="./domaines/sante.html"
-                class="solution-card__link"
-                aria-label="En savoir plus sur Odoo Santé et Pharmacie"
-              >
-                En savoir plus
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </article>
-
-            <!-- Hôtellerie -->
-            <article class="solution-card animate-on-scroll animate-delay-1">
-              <div class="solution-card__icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="2" y="7" width="20" height="14" rx="2" />
-                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                  <line x1="12" y1="12" x2="12" y2="16" />
-                  <line x1="10" y1="14" x2="14" y2="14" />
-                </svg>
-              </div>
-              <h3 class="solution-card__title">Odoo Hôtellerie</h3>
-              <p class="solution-card__desc">
-                Property Management System (PMS), réservations, facturation,
-                housekeeping et reporting en temps réel. Optimisez l'expérience
-                client et la gestion opérationnelle de votre établissement.
-              </p>
-              <a
-                href="./domaines/hotellerie.html"
-                class="solution-card__link"
-                aria-label="En savoir plus sur Odoo Hôtellerie"
-              >
-                En savoir plus
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </article>
-
-            <!-- Distribution -->
-            <article class="solution-card animate-on-scroll animate-delay-2">
-              <div class="solution-card__icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="8" cy="21" r="1" />
-                  <circle cx="19" cy="21" r="1" />
-                  <path
-                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-                  />
-                </svg>
-              </div>
-              <h3 class="solution-card__title">Commerce &amp; Distribution</h3>
-              <p class="solution-card__desc">
-                Gestion des ventes, achats, inventaire multisite, et point de
-                vente omnicanal. Synchronisez vos opérations de distribution
-                avec une visibilité en temps réel sur vos stocks et vos flux.
-              </p>
-              <a
-                href="./domaines/distribution.html"
-                class="solution-card__link"
-                aria-label="En savoir plus sur Odoo Commerce et Distribution"
-              >
-                En savoir plus
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </article>
-
-            <!-- CRM & Marketing -->
-            <article class="solution-card animate-on-scroll animate-delay-3">
-              <div class="solution-card__icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <line x1="18" y1="20" x2="18" y2="10" />
-                  <line x1="12" y1="20" x2="12" y2="4" />
-                  <line x1="6" y1="20" x2="6" y2="14" />
-                </svg>
-              </div>
-              <h3 class="solution-card__title">CRM &amp; Marketing</h3>
-              <p class="solution-card__desc">
-                Suivi des leads, automatisation marketing, pipeline commercial
-                et tableaux de bord analytiques. Transformez vos prospects en
-                clients fidèles grâce à une vision 360° de votre activité
-                commerciale.
-              </p>
-              <a
-                href="./domaines/services.html"
-                class="solution-card__link"
-                aria-label="En savoir plus sur Odoo CRM et Marketing"
-              >
-                En savoir plus
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </article>
-          </div>
-
-          <!-- Why Odoo banner -->
-          <div class="why-odoo-wrap animate-on-scroll">
-            <div class="why-odoo" aria-label="Odoo en chiffres">
-              <div>
-                <div class="why-odoo__stat-value" data-count="12000" data-format="space">12 000</div>
-                <div class="why-odoo__stat-label">Applications disponibles</div>
-              </div>
-              <div class="why-odoo__divider" aria-hidden="true"></div>
-              <div>
-                <div class="why-odoo__stat-value" data-count="7" data-suffix="&nbsp;M">7&nbsp;M</div>
-                <div class="why-odoo__stat-label">
-                  Utilisateurs dans le monde
-                </div>
-              </div>
-              <div class="why-odoo__divider" aria-hidden="true"></div>
-              <div>
-                <div class="why-odoo__stat-value" data-count="100" data-suffix="%">100%</div>
-                <div class="why-odoo__stat-label">
-                  Open source &amp; modulaire
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ============================================================
          SECTEURS
@@ -1126,7 +913,7 @@
               </div>
 
               <p class="animate-on-scroll animate-delay-1">
-                dromiss est une filiale de SMODU, dédiée exclusivement à
+                Dromiss est une filiale de SMODU, dédiée exclusivement à
                 l'implémentation et au support de solutions Odoo. Forts d'une
                 expertise reconnue dans plusieurs secteurs clés, nous
                 accompagnons les entreprises de toutes tailles dans leur
@@ -1371,7 +1158,7 @@
             <div class="footer__logo-wrap">
               <img src="./assets/img/dromiss-big-logo.png" alt="dromiss" class="footer__logo-img">
               <div class="footer__logo-text">
-                <span class="footer__logo-name">dromiss</span>
+                <span class="footer__logo-name">Dromiss</span>
                 <a href="https://smodu.com/" target="_blank" rel="noopener noreferrer" class="footer__logo-smodu">by SMODU</a>
               </div>
             </div>
